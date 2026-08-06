@@ -39,7 +39,9 @@
     "cat": "site",
     "desc": "The client's submitted basic-selection responses were routed into the internal project channel for the production and design teams. The responses covered basement door style, door trim style, bronze hardware finish, switch/outlet style, tiled shower pan and surround, recessed medicine cabinet, column style, and door trim paint to match existing main-floor trim. No selection was actually finalized at this point: the client's response flagged that the proposed door and trim would not match the existing upstairs finishes, without confirming an alternative, and he asked to discuss the interior door locks later rather than decide then. This entry records intake of the client's responses, not final approval of every listed item — a pattern worth being direct about rather than repeating in this document. The internal marked-up floor plan from this stage of the project independently confirms doors, trim, and locks were still flagged as needing confirmation, not decided.",
     "src": "System automatic message (Slack), Apr 11 (client-submitted selection responses relayed via intake automation); clarified by Helida Alvarenga's review, Aug 4, against the internal marked-up floor plan",
-    "photos": [],
+    "photos": [
+      "media/id5_1786044897824_ji3ei.jpg"
+    ],
     "files": [],
     "include": true
   },
