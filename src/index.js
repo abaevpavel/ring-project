@@ -1,29 +1,12 @@
-// Cloudflare Pages Function — POST /api/save
+// Cloudflare Worker entry point.
+// Serves the static site from /public (via the ASSETS binding), except for
+// POST /api/save, which is handled here and commits changes directly to GitHub.
 //
-// Holds the GitHub token server-side (as a Cloudflare env secret) and commits
-// timeline changes directly to the GitHub repo. The browser never sees the token.
-//
-// Required Cloudflare Pages environment variables (set in the Pages project
-// Settings > Environment variables, as *secrets* where noted):
+// Required Worker environment variables (Settings > Variables and Secrets):
 //   GITHUB_TOKEN   (secret) - fine-grained PAT, Contents: Read and write, scoped to this repo
 //   GITHUB_OWNER            - e.g. "abaevpavel"
 //   GITHUB_REPO             - e.g. "ring-project"
-//   EDITOR_SECRET  (secret) - a shared passphrase the editor page must send; stops randoms
-//                             from hitting this endpoint even though it's a public URL.
-//                             This is NOT strong security, just a basic deterrent — same
-//                             spirit as the client-view password.
-//
-// Request body (JSON):
-// {
-//   auth: "<EDITOR_SECRET>",
-//   action: "updateEntry" | "addEntry" | "deleteEntry",
-//   entry: { id, d, cat, desc, src, include },       // fields to set (updateEntry/addEntry)
-//   newPhotos: [ { filename, dataBase64 } ],          // new photo files to add (raw base64, no data: prefix)
-//   removePhotos: [ "media/idX_photoY.jpg" ],         // existing photo paths to remove
-//   newFiles: [ { name, filename, dataBase64 } ],     // new attachment files to add
-//   removeFiles: [ "media/idX_fileY.pdf" ],           // existing attachment paths to remove
-//   id: <id>                                          // for deleteEntry
-// }
+//   EDITOR_SECRET  (secret) - shared passphrase the editor must send with each save
 
 const GH_API = "https://api.github.com";
 
@@ -31,7 +14,7 @@ function ghHeaders(env) {
   return {
     Authorization: `Bearer ${env.GITHUB_TOKEN}`,
     Accept: "application/vnd.github+json",
-    "User-Agent": "ring-project-save-function",
+    "User-Agent": "ring-project-save-worker",
   };
 }
 
@@ -40,8 +23,7 @@ async function getFile(env, path) {
   const res = await fetch(url, { headers: ghHeaders(env) });
   if (res.status === 404) return null;
   if (!res.ok) throw new Error(`GitHub GET ${path} failed: ${res.status} ${await res.text()}`);
-  const json = await res.json();
-  return json; // { content (base64, may have newlines), sha, ... }
+  return res.json();
 }
 
 async function putFile(env, path, base64Content, message, sha) {
@@ -93,8 +75,14 @@ function buildClientEntries(entries) {
     }));
 }
 
-export async function onRequestPost(context) {
-  const { request, env } = context;
+function json(obj, status = 200) {
+  return new Response(JSON.stringify(obj), {
+    status,
+    headers: { "Content-Type": "application/json" },
+  });
+}
+
+async function handleSave(request, env) {
   let body;
   try {
     body = await request.json();
@@ -107,8 +95,8 @@ export async function onRequestPost(context) {
   }
 
   try {
-    const entriesFile = await getFile(env, "data/entries.json");
-    if (!entriesFile) throw new Error("data/entries.json not found in repo");
+    const entriesFile = await getFile(env, "public/data/entries.json");
+    if (!entriesFile) throw new Error("public/data/entries.json not found in repo");
     let entries = decodeJsonFile(entriesFile);
 
     let resultEntry = null;
@@ -151,30 +139,30 @@ export async function onRequestPost(context) {
         } catch (err) { /* best-effort */ }
       }
       for (const np of body.newPhotos || []) {
-        const path = `media/${np.filename}`;
+        const path = `public/media/${np.filename}`;
         await putFile(env, path, np.dataBase64, `Add photo to entry ${entry.id}`);
-        entry.photos.push(path);
+        entry.photos.push(`media/${np.filename}`);
       }
       for (const nf of body.newFiles || []) {
-        const path = `media/${nf.filename}`;
+        const path = `public/media/${nf.filename}`;
         await putFile(env, path, nf.dataBase64, `Add attachment to entry ${entry.id}`);
-        entry.files.push({ name: nf.name, path });
+        entry.files.push({ name: nf.name, path: `media/${nf.filename}` });
       }
       resultEntry = entry;
     }
 
     await putFile(
       env,
-      "data/entries.json",
+      "public/data/entries.json",
       encodeJson(entries),
       `Update timeline data (${body.action})`,
       entriesFile.sha
     );
 
-    const clientFile = await getFile(env, "data/client-entries.json");
+    const clientFile = await getFile(env, "public/data/client-entries.json");
     await putFile(
       env,
-      "data/client-entries.json",
+      "public/data/client-entries.json",
       encodeJson(buildClientEntries(entries)),
       `Regenerate client-facing view (${body.action})`,
       clientFile ? clientFile.sha : undefined
@@ -186,9 +174,12 @@ export async function onRequestPost(context) {
   }
 }
 
-function json(obj, status = 200) {
-  return new Response(JSON.stringify(obj), {
-    status,
-    headers: { "Content-Type": "application/json" },
-  });
-}
+export default {
+  async fetch(request, env) {
+    const url = new URL(request.url);
+    if (url.pathname === "/api/save" && request.method === "POST") {
+      return handleSave(request, env);
+    }
+    return env.ASSETS.fetch(request);
+  },
+};
