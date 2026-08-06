@@ -871,10 +871,6 @@
       {
         "name": "John Ring Contract - full signed packet (31pp)",
         "path": "media/id80_file1.pdf"
-      },
-      {
-        "name": "INTERNAL_SCOPE.pdf",
-        "path": "media/id80_1786043040830.pdf"
       }
     ],
     "include": true
