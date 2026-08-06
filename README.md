@@ -1,48 +1,42 @@
 # RING-Bethesda Project Timeline
 
-Two pages, one shared data source, hosted on Cloudflare Pages and connected to this GitHub repo.
+Single page (`index.html`), gated by password, deployed as a Cloudflare Worker (static assets +
+a Function) connected to this GitHub repo. Which password you enter decides what you see:
 
-- `index.html` — read-only, password-gated client view. Fetches `data/client-entries.json`.
-- `editor.html` — internal editor (Helida & Pavel). Fetches `data/entries.json`, and saves go through
-  `/api/save`, which commits directly back to this repo. No more browser storage limits, no more
-  manual backup/export — every save is a real GitHub commit.
+- **Client password** → read-only view, fetches `data/client-entries.json`.
+- **Editor password** → same page, but with Edit/Delete/Add controls, fetches the full
+  `data/entries.json`, and saves go through `/api/save`, which commits directly back to this repo.
+  No browser storage limits, no manual backups — every save is a real GitHub commit.
+
 - `data/entries.json` — full internal dataset (source of truth).
 - `data/client-entries.json` — auto-regenerated subset (only `include:true` entries, internal-only
-  attachments stripped). Never edit this by hand; it's rebuilt by `/api/save` on every change.
-- `media/` — actual photo/video/PDF files, referenced by path from both JSON files.
-- `functions/api/save.js` — the Cloudflare Pages Function that does the committing.
+  attachments stripped). Rebuilt automatically by `/api/save` on every change — never edit by hand.
+- `media/` — actual photo/PDF files, referenced by path from both JSON files. (Videos are linked to
+  Slack instead of hosted here — Cloudflare's per-file size limit rejected the raw video files.)
+- `functions/api/save.js` — the Cloudflare Function that does the committing.
 
-## One-time setup (Cloudflare Pages)
+## One-time setup (Cloudflare)
 
-1. In the Cloudflare dashboard: **Workers & Pages → Create → Pages → Connect to Git**, authorize
-   GitHub, and select this repo (`ring-project`).
-2. Build settings:
-   - Framework preset: **None**
-   - Build command: *(leave empty)*
-   - Build output directory: `/`
-3. After the first deploy, go to the Pages project's **Settings → Environment variables** and add
-   these for **both** Production and Preview:
+This is already deployed as a Worker with static assets, connected to this repo via Git integration.
+In the Cloudflare dashboard, under this Worker's **Settings → Variables and Secrets**, these must be set:
 
-   | Variable | Value | Type |
-   |---|---|---|
-   | `GITHUB_TOKEN` | *(the fine-grained PAT, Contents: Read and write, scoped to this repo)* | Secret |
-   | `GITHUB_OWNER` | `abaevpavel` | Plain |
-   | `GITHUB_REPO` | `ring-project` | Plain |
-   | `EDITOR_SECRET` | *(pick a private passphrase — this is what the editor page will ask you and Pavel for once, on first use in each browser)* | Secret |
+| Variable | Value | Type |
+|---|---|---|
+| `GITHUB_TOKEN` | fine-grained PAT, Contents: Read and write, scoped to this repo | Secret |
+| `GITHUB_OWNER` | `abaevpavel` | Plain |
+| `GITHUB_REPO` | `ring-project` | Plain |
+| `EDITOR_SECRET` | the editor password (whatever you type at the gate to get editor mode) | Secret |
 
-4. Redeploy (Settings changes require a new deployment to take effect — you can trigger this from
-   the **Deployments** tab with "Retry deployment", or it'll pick up automatically on the next push).
-5. Your site is live at the `*.pages.dev` URL Cloudflare gives you (you can also attach a custom
-   domain under the Pages project's **Custom domains** tab). Client view is at the root URL;
-   editor is at `/editor.html`.
+The Worker's public URL needs the **Production** `workers.dev` route toggled on under the
+**Domains** tab, or a custom domain attached.
 
 ## Notes
 
-- The client-view password (`Bethesda2026`, set in `index.html`) is a deterrent, not real security —
-  anyone with the URL who inspects the page source can see the underlying data regardless of the
-  password. This was a deliberate, discussed tradeoff, not an oversight.
-- Saves normally take 10-60 seconds to actually go live on the site (Cloudflare rebuilds/redeploys on
-  every commit), even though the editor page reflects your change immediately using a local preview.
+- Both passwords are deterrents, not real security — anyone with the URL who inspects the page
+  source or network requests can see the underlying data regardless of which password screen is
+  used. This was a deliberate, discussed tradeoff, not an oversight.
+- Saves normally take 10-60 seconds to actually go live on the site (Cloudflare rebuilds on every
+  commit), even though the page reflects your change immediately using a local preview.
 - A few file attachments are still just links to Slack (marked "company Slack login required" in
-  their name) because we never got the actual files — those still require someone with Slack access
-  to open them.
+  their name) because we never got the actual files, or the files were too large to host — those
+  still require someone with Slack access to open them.
