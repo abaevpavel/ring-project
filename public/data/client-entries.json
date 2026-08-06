@@ -543,18 +543,6 @@
     "include": true
   },
   {
-    "id": 49,
-    "d": "2026-05-02, 11:08 AM",
-    "cat": "qc",
-    "desc": "John Ring's weekly check-in, transmitted via the automated feedback-form notification system, raised a lead-paint dust safety concern: the team had assured him lead-safe containment practices would be followed before demo, but framers began cutting and creating dust before the work area was covered, and he had to stop them and ask that covering be completed first. Why this matters: lead-safe work practices are a regulatory requirement on pre-1978 homes, and the client's account describes a sequencing lapse rather than a refusal to follow the plan. Per the signed contract's Asbestos and Lead Paint Disclosure clause (initialed by the Owner), the Owner is responsible for disclosing to the Contractor the presence of any known or suspected lead-based paint at the job site prior to the start of work. There is no record or confirmation that this disclosure was made before work began.",
-    "src": "Client weekly-check-in response transmitted by the automated BasementRemodeling.com notification system, May 2, 11:08am",
-    "photos": [
-      "media/id49_photo1.png"
-    ],
-    "files": [],
-    "include": true
-  },
-  {
     "id": 50,
     "d": "2026-05-17, 9:05 PM",
     "cat": "qc",
