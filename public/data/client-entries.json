@@ -16,7 +16,12 @@
     "desc": "Internal project kickoff and assignment notification: Willy Lopez was assigned as project manager, with Shanae Mobley supporting design and Alfredo Lopez supporting project logistics. The posted project information summarized the previously flooded basement, the client-installed French drain, the planned rec room, bathroom, bedroom, laundry, and storage/mechanical areas, and an initial projected completion date of June 30, 2026. The June 30 date was an early projection, not a final guaranteed completion date, and it changed later as scope decisions, field conditions, and outstanding client selections affected the schedule. Note on process: the project follows a design-as-you-build approach, finalizing construction details in the order the schedule needs them, rather than settling every selection before work begins.",
     "src": "System automatic message (Slack), Apr 1, 1:01pm",
     "photos": [],
-    "files": [],
+    "files": [
+      {
+        "name": "BasementPhoto_22.jpg",
+        "path": "media/id2_1786043638559.jpg"
+      }
+    ],
     "include": true
   },
   {
