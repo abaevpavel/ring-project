@@ -1,12 +1,19 @@
 // Cloudflare Worker entry point.
 // Serves the static site from /public (via the ASSETS binding), except for
-// POST /api/save, which is handled here and commits changes directly to GitHub.
+// POST /api/login and POST /api/save, handled here.
 //
 // Required Worker environment variables (Settings > Variables and Secrets):
-//   GITHUB_TOKEN   (secret) - fine-grained PAT, Contents: Read and write, scoped to this repo
-//   GITHUB_OWNER            - e.g. "abaevpavel"
-//   GITHUB_REPO             - e.g. "ring-project"
-//   EDITOR_SECRET  (secret) - shared passphrase the editor must send with each save
+//   GITHUB_TOKEN     (secret) - fine-grained PAT, Contents: Read and write, scoped to this repo
+//   GITHUB_OWNER              - e.g. "abaevpavel"
+//   GITHUB_REPO               - e.g. "ring-project"
+//   EDITOR_SECRET    (secret) - shared passphrase for editor mode
+//   CLIENT_PASSWORD  (secret) - shared passphrase for the read-only client view
+//
+// Uses GitHub's Git Data API (blobs/trees/commits) rather than the simpler "Contents API"
+// (PUT .../contents/{path}) — the Contents API silently rejects files above a few MB with a
+// "file is too large to be processed" 422 error despite GitHub's docs claiming a 100MB limit.
+// The Git Data API handles files up to 100MB reliably, and lets us bundle every change (new
+// media files + updated JSON) into a single commit instead of several.
 
 const GH_API = "https://api.github.com";
 
@@ -18,35 +25,26 @@ function ghHeaders(env) {
   };
 }
 
-async function getFile(env, path) {
+async function gh(env, method, path, body) {
+  const res = await fetch(`${GH_API}${path}`, {
+    method,
+    headers: { ...ghHeaders(env), "Content-Type": "application/json" },
+    body: body !== undefined ? JSON.stringify(body) : undefined,
+  });
+  if (!res.ok) {
+    throw new Error(`GitHub ${method} ${path} failed: ${res.status} ${await res.text()}`);
+  }
+  if (res.status === 204) return null;
+  return res.json();
+}
+
+async function getFileContent(env, path) {
+  // Still fine via the Contents API for small text files like entries.json.
   const url = `${GH_API}/repos/${env.GITHUB_OWNER}/${env.GITHUB_REPO}/contents/${encodeURIComponent(path)}`;
   const res = await fetch(url, { headers: ghHeaders(env) });
   if (res.status === 404) return null;
   if (!res.ok) throw new Error(`GitHub GET ${path} failed: ${res.status} ${await res.text()}`);
   return res.json();
-}
-
-async function putFile(env, path, base64Content, message, sha) {
-  const url = `${GH_API}/repos/${env.GITHUB_OWNER}/${env.GITHUB_REPO}/contents/${encodeURIComponent(path)}`;
-  const body = { message, content: base64Content, branch: "main" };
-  if (sha) body.sha = sha;
-  const res = await fetch(url, {
-    method: "PUT",
-    headers: { ...ghHeaders(env), "Content-Type": "application/json" },
-    body: JSON.stringify(body),
-  });
-  if (!res.ok) throw new Error(`GitHub PUT ${path} failed: ${res.status} ${await res.text()}`);
-  return res.json();
-}
-
-async function deleteFile(env, path, sha, message) {
-  const url = `${GH_API}/repos/${env.GITHUB_OWNER}/${env.GITHUB_REPO}/contents/${encodeURIComponent(path)}`;
-  const res = await fetch(url, {
-    method: "DELETE",
-    headers: { ...ghHeaders(env), "Content-Type": "application/json" },
-    body: JSON.stringify({ message, sha, branch: "main" }),
-  });
-  if (!res.ok) throw new Error(`GitHub DELETE ${path} failed: ${res.status} ${await res.text()}`);
 }
 
 function decodeJsonFile(fileObj) {
@@ -56,7 +54,7 @@ function decodeJsonFile(fileObj) {
   return JSON.parse(new TextDecoder("utf-8").decode(bytes));
 }
 
-function encodeJson(obj) {
+function encodeJsonBase64(obj) {
   const text = JSON.stringify(obj, null, 2);
   const bytes = new TextEncoder().encode(text);
   let binary = "";
@@ -82,6 +80,55 @@ function json(obj, status = 200) {
   });
 }
 
+// Commits a batch of file changes as ONE commit on main.
+// files: array of { path, base64Content } to add/update, or { path, delete: true } to remove.
+async function commitFiles(env, message, files) {
+  const owner = env.GITHUB_OWNER, repo = env.GITHUB_REPO;
+
+  for (let attempt = 0; attempt < 2; attempt++) {
+    const ref = await gh(env, "GET", `/repos/${owner}/${repo}/git/refs/heads/main`);
+    const latestCommitSha = ref.object.sha;
+    const latestCommit = await gh(env, "GET", `/repos/${owner}/${repo}/git/commits/${latestCommitSha}`);
+    const baseTreeSha = latestCommit.tree.sha;
+
+    const treeEntries = [];
+    for (const f of files) {
+      if (f.delete) {
+        treeEntries.push({ path: f.path, mode: "100644", type: "blob", sha: null });
+      } else {
+        const blob = await gh(env, "POST", `/repos/${owner}/${repo}/git/blobs`, {
+          content: f.base64Content,
+          encoding: "base64",
+        });
+        treeEntries.push({ path: f.path, mode: "100644", type: "blob", sha: blob.sha });
+      }
+    }
+
+    const newTree = await gh(env, "POST", `/repos/${owner}/${repo}/git/trees`, {
+      base_tree: baseTreeSha,
+      tree: treeEntries,
+    });
+
+    const newCommit = await gh(env, "POST", `/repos/${owner}/${repo}/git/commits`, {
+      message,
+      tree: newTree.sha,
+      parents: [latestCommitSha],
+    });
+
+    try {
+      await gh(env, "PATCH", `/repos/${owner}/${repo}/git/refs/heads/main`, {
+        sha: newCommit.sha,
+      });
+      return newCommit.sha;
+    } catch (err) {
+      // Someone else committed in between (e.g. a concurrent save) -- retry once against the
+      // new tip rather than failing the whole save.
+      if (attempt === 0) continue;
+      throw err;
+    }
+  }
+}
+
 async function handleSave(request, env) {
   let body;
   try {
@@ -95,11 +142,12 @@ async function handleSave(request, env) {
   }
 
   try {
-    const entriesFile = await getFile(env, "public/data/entries.json");
+    const entriesFile = await getFileContent(env, "public/data/entries.json");
     if (!entriesFile) throw new Error("public/data/entries.json not found in repo");
     let entries = decodeJsonFile(entriesFile);
 
     let resultEntry = null;
+    const filesToCommit = [];
 
     if (body.action === "deleteEntry") {
       const idx = entries.findIndex((e) => e.id === body.id);
@@ -126,47 +174,29 @@ async function handleSave(request, env) {
 
       for (const p of body.removePhotos || []) {
         entry.photos = entry.photos.filter((x) => x !== p);
-        try {
-          const f = await getFile(env, p);
-          if (f) await deleteFile(env, p, f.sha, `Remove photo from entry ${entry.id}`);
-        } catch (err) { /* best-effort */ }
+        filesToCommit.push({ path: `public/${p}`, delete: true });
       }
       for (const p of body.removeFiles || []) {
         entry.files = entry.files.filter((x) => x.path !== p);
-        try {
-          const f = await getFile(env, p);
-          if (f) await deleteFile(env, p, f.sha, `Remove attachment from entry ${entry.id}`);
-        } catch (err) { /* best-effort */ }
+        filesToCommit.push({ path: `public/${p}`, delete: true });
       }
       for (const np of body.newPhotos || []) {
-        const path = `public/media/${np.filename}`;
-        await putFile(env, path, np.dataBase64, `Add photo to entry ${entry.id}`);
-        entry.photos.push(`media/${np.filename}`);
+        const relPath = `media/${np.filename}`;
+        filesToCommit.push({ path: `public/${relPath}`, base64Content: np.dataBase64 });
+        entry.photos.push(relPath);
       }
       for (const nf of body.newFiles || []) {
-        const path = `public/media/${nf.filename}`;
-        await putFile(env, path, nf.dataBase64, `Add attachment to entry ${entry.id}`);
-        entry.files.push({ name: nf.name, path: `media/${nf.filename}` });
+        const relPath = `media/${nf.filename}`;
+        filesToCommit.push({ path: `public/${relPath}`, base64Content: nf.dataBase64 });
+        entry.files.push({ name: nf.name, path: relPath });
       }
       resultEntry = entry;
     }
 
-    await putFile(
-      env,
-      "public/data/entries.json",
-      encodeJson(entries),
-      `Update timeline data (${body.action})`,
-      entriesFile.sha
-    );
+    filesToCommit.push({ path: "public/data/entries.json", base64Content: encodeJsonBase64(entries) });
+    filesToCommit.push({ path: "public/data/client-entries.json", base64Content: encodeJsonBase64(buildClientEntries(entries)) });
 
-    const clientFile = await getFile(env, "public/data/client-entries.json");
-    await putFile(
-      env,
-      "public/data/client-entries.json",
-      encodeJson(buildClientEntries(entries)),
-      `Regenerate client-facing view (${body.action})`,
-      clientFile ? clientFile.sha : undefined
-    );
+    await commitFiles(env, `Update timeline (${body.action})`, filesToCommit);
 
     return json({ ok: true, entry: resultEntry, totalEntries: entries.length });
   } catch (err) {
