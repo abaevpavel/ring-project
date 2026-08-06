@@ -197,7 +197,12 @@
       "media/id15_photo1.jpg",
       "media/id15_photo2.jpg"
     ],
-    "files": [],
+    "files": [
+      {
+        "name": "04-POST_FRAMING_QC_compressed.pdf",
+        "path": "media/id15_1786044156770.pdf"
+      }
+    ],
     "include": true
   },
   {
