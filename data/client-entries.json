@@ -198,16 +198,7 @@
       "media/id19_photo1.jpg",
       "media/id19_photo2.jpg"
     ],
-    "files": [
-      {
-        "name": "Video, Oscar Herrera, fire-stopping 99% complete, May 15 12:19pm",
-        "path": "media/2026-05-15_Oscar-Herrera_firestop.mov"
-      },
-      {
-        "name": "Video, Javier Cruz-Lopez, framing repair complete, May 15 1:08pm",
-        "path": "media/2026-05-15_Javier-CruzLopez_framing-repair.mp4"
-      }
-    ],
+    "files": [],
     "include": true
   },
   {
@@ -244,12 +235,7 @@
       "media/id22_photo3.jpg",
       "media/id22_photo4.jpg"
     ],
-    "files": [
-      {
-        "name": "Video, Jeovanni Corcio, framing repair photo-documented, Jun 11 3:48pm",
-        "path": "media/2026-06-11_Jeovanni-Corcio_framing-repair.mp4"
-      }
-    ],
+    "files": [],
     "include": true
   },
   {
