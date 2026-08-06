@@ -27,13 +27,14 @@ Already deployed and connected to this repo via Git integration. Under
 | `GITHUB_OWNER` | `abaevpavel` | Text |
 | `GITHUB_REPO` | `ring-project` | Text |
 | `EDITOR_SECRET` | the editor password (whatever you'll type at the gate for editor mode) | Secret |
+| `CLIENT_PASSWORD` | the client-facing password (e.g. `Bethesda2026`) | Secret |
 
 The Worker's public URL needs the **Production** `workers.dev` route toggled on under the
 **Domains** tab, or a custom domain attached.
 
 ## Notes
 
-- Both passwords are deterrents, not real security — anyone with the URL who inspects the page
+- The password gate now checks both passwords server-side (`/api/login`) before letting anyone in — wrong passwords are rejected immediately, right there, instead of only failing later when trying to save. Both passwords are still deterrents, not strong security — anyone with the URL who inspects the page
   source or network requests can see the underlying data regardless of which password is used.
   This was a deliberate, discussed tradeoff, not an oversight.
 - Saves normally take 10-60 seconds to actually go live (Cloudflare redeploys on every commit),

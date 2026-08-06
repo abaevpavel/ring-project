@@ -32,7 +32,6 @@
 <div id="toastRoot"></div>
 
 <script>
-const CLIENT_PASSWORD = "Bethesda2026"; // deterrent only, not real security
 const catLabel = {qc:"QC & inspections", sched:"Schedule update", site:"Site work & selections", comm:"Client communication", auto:"Automatic message", pay:"Billing & payments"};
 let data = [];
 let activeFilter = "all";
@@ -40,21 +39,26 @@ let editingId = null;
 let isEditor = false;
 let editorAuth = null;
 
-function checkPw(){
+async function checkPw(){
   const val = document.getElementById("pw").value;
-  if(val === CLIENT_PASSWORD){
-    isEditor = false;
+  const btn = document.querySelector("#gate button");
+  const errEl = document.getElementById("pwErr");
+  errEl.textContent = "";
+  btn.disabled = true;
+  try{
+    const res = await fetch("/api/login", {method:"POST", headers:{"Content-Type":"application/json"}, body: JSON.stringify({password: val})});
+    const result = await res.json();
+    if(!result.ok){
+      errEl.textContent = "Incorrect password. Please try again.";
+      return;
+    }
+    isEditor = result.mode === "editor";
+    if(isEditor) editorAuth = val;
     enterApp();
-  } else if(val){
-    // Try it as the editor passcode -- validated for real on first save attempt against
-    // Cloudflare's EDITOR_SECRET. Anyone can currently reach either mode with the right
-    // password; this is the same "password is a deterrent, not real security" tradeoff as
-    // the client view always had.
-    isEditor = true;
-    editorAuth = val;
-    enterApp();
-  } else {
-    document.getElementById("pwErr").textContent = "Incorrect password. Please try again.";
+  } catch(err){
+    errEl.textContent = "Could not verify password right now. Please try again.";
+  } finally {
+    btn.disabled = false;
   }
 }
 

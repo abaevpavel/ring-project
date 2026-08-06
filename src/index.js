@@ -174,9 +174,29 @@ async function handleSave(request, env) {
   }
 }
 
+async function handleLogin(request, env) {
+  let body;
+  try {
+    body = await request.json();
+  } catch (err) {
+    return json({ ok: false, error: "Invalid JSON body" }, 400);
+  }
+  const pw = body.password || "";
+  if (env.EDITOR_SECRET && pw === env.EDITOR_SECRET) {
+    return json({ ok: true, mode: "editor" });
+  }
+  if (env.CLIENT_PASSWORD && pw === env.CLIENT_PASSWORD) {
+    return json({ ok: true, mode: "client" });
+  }
+  return json({ ok: false, error: "Incorrect password" }, 401);
+}
+
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
+    if (url.pathname === "/api/login" && request.method === "POST") {
+      return handleLogin(request, env);
+    }
     if (url.pathname === "/api/save" && request.method === "POST") {
       return handleSave(request, env);
     }
