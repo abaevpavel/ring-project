@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RING-Bethesda — Project Record</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="gate">
+  <div class="box">
+    <h2 style="margin-top:0;">RING-Bethesda</h2>
+    <p class="sub" style="margin-bottom:0;">Please enter the password provided to you to view the project record.</p>
+    <input type="password" id="pw" placeholder="Password" onkeydown="if(event.key==='Enter')checkPw()">
+    <div class="err" id="pwErr"></div>
+    <button onclick="checkPw()">View project record</button>
+  </div>
+</div>
+
+<div id="content">
+  <h1>RING-Bethesda — Project Record</h1>
+  <p class="sub">A chronological record of quality control, schedule, and communication for your basement remodeling project. Click any photo to enlarge, or any attachment to open it.</p>
+  <button id="printBtn" onclick="window.print()">Print / Save as PDF</button>
+  <div class="filters" id="filters"></div>
+  <div id="list"></div>
+</div>
+
+<script>
+const PASSWORD = "Bethesda2026"; // deterrent only, not real security -- data is fetched regardless
+const catLabel = {qc:"QC & Inspections", sched:"Schedule Update", site:"Site Work & Selections", comm:"Client Communication", auto:"Automatic Message", pay:"Billing & Payments"};
+let data = [];
+let activeFilter = "all";
+
+function checkPw(){
+  const val = document.getElementById("pw").value;
+  if(val === PASSWORD){
+    document.getElementById("gate").style.display = "none";
+    document.getElementById("content").style.display = "block";
+    loadData();
+  } else {
+    document.getElementById("pwErr").textContent = "Incorrect password. Please try again.";
+  }
+}
+
+async function loadData(){
+  try{
+    const res = await fetch("data/client-entries.json", {cache:"no-store"});
+    data = await res.json();
+  } catch(err){
+    document.getElementById("list").innerHTML = "<p>Could not load project data. Please try reloading.</p>";
+    return;
+  }
+  renderAll();
+}
+
+function renderFilters(){
+  const cats = ["all","qc","sched","site","comm","auto","pay"];
+  const labels = {all:"All", qc:"QC & Inspections", sched:"Schedule Updates", site:"Site Work & Selections", comm:"Client Communications", auto:"Automatic Messages", pay:"Billing & Payments"};
+  const el = document.getElementById("filters");
+  el.innerHTML = "";
+  cats.forEach(c=>{
+    const b = document.createElement("button");
+    b.className = "chip" + (activeFilter===c ? " active" : "");
+    b.textContent = labels[c];
+    b.onclick = ()=>{ activeFilter = c; renderAll(); };
+    el.appendChild(b);
+  });
+}
+
+function renderList(){
+  const el = document.getElementById("list");
+  el.innerHTML = "";
+  const sorted = [...data].sort((a,b)=>a.d.localeCompare(b.d));
+  sorted.forEach(x=>{
+    if(activeFilter !== "all" && x.cat !== activeFilter) return;
+    const div = document.createElement("div");
+    div.className = "entry " + x.cat;
+    const photosHtml = (x.photos||[]).map(p=>`<img src="${p}" onclick="window.open(this.src)">`).join("");
+    const filesHtml = (x.files||[]).map(f=>{
+      const href = f.path || f.url;
+      return `<a class="file-chip" href="${href}" target="_blank" rel="noopener">&#128206; ${f.name}</a>`;
+    }).join("");
+    div.innerHTML = `
+      <div class="badge ${x.cat}">${catLabel[x.cat]}</div>
+      <div class="date">${x.d}</div>
+      <div class="desc">${x.desc}</div>
+      <div class="src">${x.src}</div>
+      <div class="photos">${photosHtml}</div>
+      <div class="files">${filesHtml}</div>
+    `;
+    el.appendChild(div);
+  });
+}
+
+function renderAll(){
+  renderFilters();
+  renderList();
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,1071 @@
+[
+  {
+    "id": 1,
+    "d": "2026-03-31, 9:52 AM",
+    "cat": "auto",
+    "desc": "Permit request submitted internally, kicking off floorplan and permit preparation for the project.",
+    "src": "System automatic message (Slack), Mar 31, 9:52am",
+    "photos": [],
+    "files": [],
+    "include": true
+  },
+  {
+    "id": 2,
+    "d": "2026-04-01, 1:01 PM",
+    "cat": "auto",
+    "desc": "Internal project kickoff and assignment notification: Willy Lopez was assigned as project manager, with Shanae Mobley supporting design and Alfredo Lopez supporting project logistics. The posted project information summarized the previously flooded basement, the client-installed French drain, the planned rec room, bathroom, bedroom, laundry, and storage/mechanical areas, and an initial projected completion date of June 30, 2026. The June 30 date was an early projection, not a final guaranteed completion date, and it changed later as scope decisions, field conditions, and outstanding client selections affected the schedule. Note on process: the project follows a design-as-you-build approach, finalizing construction details in the order the schedule needs them, rather than settling every selection before work begins.",
+    "src": "System automatic message (Slack), Apr 1, 1:01pm",
+    "photos": [],
+    "files": [],
+    "include": true
+  },
+  {
+    "id": 3,
+    "d": "2026-04-02, 12:57 PM",
+    "cat": "qc",
+    "desc": "Framing plan set to leave approximately 1.5\" of clearance behind exterior wall framing to keep insulation clear of the exterior walls, in addition to the vapor barrier already specified, per an early client request.",
+    "src": "Elena Lupan, Apr 2",
+    "photos": [
+      "media/id3_photo1.jpg"
+    ],
+    "files": [],
+    "include": true
+  },
+  {
+    "id": 5,
+    "d": "2026-04-11, 9:43–10:09 AM",
+    "cat": "site",
+    "desc": "The client's submitted basic-selection responses were routed into the internal project channel for the production and design teams. The responses covered basement door style, door trim style, bronze hardware finish, switch/outlet style, tiled shower pan and surround, recessed medicine cabinet, column style, and door trim paint to match existing main-floor trim. No selection was actually finalized at this point: the client's response flagged that the proposed door and trim would not match the existing upstairs finishes, without confirming an alternative, and he asked to discuss the interior door locks later rather than decide then. This entry records intake of the client's responses, not final approval of every listed item — a pattern worth being direct about rather than repeating in this document. The internal marked-up floor plan from this stage of the project independently confirms doors, trim, and locks were still flagged as needing confirmation, not decided.",
+    "src": "System automatic message (Slack), Apr 11 (client-submitted selection responses relayed via intake automation); clarified by Helida Alvarenga's review, Aug 4, against the internal marked-up floor plan",
+    "photos": [],
+    "files": [],
+    "include": true
+  },
+  {
+    "id": 6,
+    "d": "2026-04-14, 8:36 PM",
+    "cat": "auto",
+    "desc": "Project checklist generated for the job.",
+    "src": "System automatic message (Slack), Apr 14",
+    "photos": [],
+    "files": [],
+    "include": true
+  },
+  {
+    "id": 8,
+    "d": "2026-04-27, 9:48 AM",
+    "cat": "site",
+    "desc": "Portable restroom requested, with delivery arranged for the next day (April 28) ahead of pre-construction.",
+    "src": "Alfredo Lopez, Apr 27",
+    "photos": [],
+    "files": [],
+    "include": true
+  },
+  {
+    "id": 9,
+    "d": "2026-04-28, 8:30 AM",
+    "cat": "comm",
+    "desc": "Pre-construction start on site.",
+    "src": "Confirmed schedule, Apr 28",
+    "photos": [],
+    "files": [],
+    "include": true
+  },
+  {
+    "id": 40,
+    "d": "2026-04-28",
+    "cat": "site",
+    "desc": "Alfredo Lopez went to the property to verify delivery of the portable restroom on the pre-construction start day.",
+    "src": "Alfredo Lopez, Apr 28",
+    "photos": [
+      "media/id40_photo1.jpg"
+    ],
+    "files": [],
+    "include": true
+  },
+  {
+    "id": 10,
+    "d": "2026-04-29, 11:37 AM",
+    "cat": "qc",
+    "desc": "Following the pre-construction walkthrough, Shanae Mobley (design coordinator) shared the marked-up floor plan with Willy Lopez (PM), flagging outstanding items to confirm: interior door styles, trim, and lock hardware. This is the same open item noted at kickoff (April 11) that still needed a final decision.",
+    "src": "Shanae Mobley, Apr 29",
+    "photos": [
+      "media/id10_photo1.jpg"
+    ],
+    "files": [],
+    "include": true
+  },
+  {
+    "id": 41,
+    "d": "2026-04-29, 1:31 PM",
+    "cat": "site",
+    "desc": "Oscar Herrera cleared trash from the site.",
+    "src": "Oscar Herrera, Apr 29",
+    "photos": [
+      "media/id41_photo1.jpg"
+    ],
+    "files": [],
+    "include": true
+  },
+  {
+    "id": 11,
+    "d": "2026-04-29, 3:04 PM",
+    "cat": "site",
+    "desc": "Electrical trade coordination meeting scheduled.",
+    "src": "Willy Lopez, Apr 29",
+    "photos": [],
+    "files": [],
+    "include": true
+  },
+  {
+    "id": 12,
+    "d": "2026-04-30, 5:28 PM",
+    "cat": "site",
+    "desc": "Willy Lopez (PM) reviewed the bulkhead plan over the washer/dryer location with design coordinator Shanae Mobley.",
+    "src": "Willy Lopez, Apr 30",
+    "photos": [
+      "media/id12_photo1.jpg"
+    ],
+    "files": [],
+    "include": true
+  },
+  {
+    "id": 13,
+    "d": "2026-05-01, 9:37–11:47 AM",
+    "cat": "qc",
+    "desc": "Shanae Mobley flagged a contract requirement to insulate the full laundry room ceiling. Willy Lopez (PM) confirmed ceiling height (84.5\") and vanity area height (89\") to close out the detail.",
+    "src": "Willy Lopez & Shanae Mobley, May 1",
+    "photos": [
+      "media/id13_photo1.jpg"
+    ],
+    "files": [],
+    "include": true
+  },
+  {
+    "id": 14,
+    "d": "2026-05-04, 2:10 PM",
+    "cat": "qc",
+    "desc": "Willy Lopez (PM) recorded room dimensions (110\"x108\" pre-drywall, 84.5\" ceiling height) ahead of drywall installation.",
+    "src": "Willy Lopez, May 4",
+    "photos": [
+      "media/id14_photo1.jpg"
+    ],
+    "files": [],
+    "include": true
+  },
+  {
+    "id": 15,
+    "d": "2026-05-05, 10:15–10:29 AM",
+    "cat": "qc",
+    "desc": "Jeovanni Corcio (QC) walked the site and issued a punch list for correction: bathroom exhaust fan not yet installed, water heater exhaust bulkhead, laundry ceiling not fully dropped, register alignment, stair stringer/plate repair, and removal of an old alarm box. Reported to Willy Lopez (PM). Why: this is a standard pre-drywall QC walk, run to catch anything that needs fixing before rough framing and mechanicals get closed in behind drywall.",
+    "src": "Jeovanni Corcio, May 5, 10:15–10:29am",
+    "photos": [
+      "media/id15_photo1.jpg",
+      "media/id15_photo2.jpg"
+    ],
+    "files": [],
+    "include": true
+  },
+  {
+    "id": 16,
+    "d": "2026-05-08, 11:31 AM",
+    "cat": "site",
+    "desc": "Alfredo Lopez cleared trash and excess material from the site.",
+    "src": "Alfredo Lopez, May 8",
+    "photos": [],
+    "files": [],
+    "include": true
+  },
+  {
+    "id": 17,
+    "d": "2026-05-12, 11:26 AM",
+    "cat": "qc",
+    "desc": "Willy Lopez (PM) documented plumbing and framing clearances (washing machine lid clearance, window sill height, trim spacing) and added an access panel to resolve a cleanout obstruction.",
+    "src": "Willy Lopez, May 12",
+    "photos": [
+      "media/id17_photo1.jpg"
+    ],
+    "files": [],
+    "include": true
+  },
+  {
+    "id": 19,
+    "d": "2026-05-15, 6:02 AM–1:50 PM",
+    "cat": "qc",
+    "desc": "Willy Lopez (PM) called for rough-in QC covering the exhaust fan, framing repair, and fire-stopping. Oscar Herrera reported fire-stopping 99% complete by 12:19pm; Javier Cruz-Lopez confirmed the framing repair complete by 1:50pm. Why: rough-in QC is the checkpoint performed after framing, plumbing, and electrical rough-in are in place, and before insulation and drywall — it is the last point at which these items can be corrected without opening the walls back up.",
+    "src": "Willy Lopez, Oscar Herrera, Javier Cruz-Lopez, May 15",
+    "photos": [
+      "media/id19_photo1.jpg",
+      "media/id19_photo2.jpg"
+    ],
+    "files": [
+      {
+        "name": "Video, Oscar Herrera, fire-stopping 99% complete, May 15 12:19pm",
+        "path": "media/2026-05-15_Oscar-Herrera_firestop.mov"
+      },
+      {
+        "name": "Video, Javier Cruz-Lopez, framing repair complete, May 15 1:08pm",
+        "path": "media/2026-05-15_Javier-CruzLopez_framing-repair.mp4"
+      }
+    ],
+    "include": true
+  },
+  {
+    "id": 20,
+    "d": "2026-05-20, 5:42 AM–2:06 PM",
+    "cat": "qc",
+    "desc": "Willy Lopez (PM) requested the bathroom exhaust fan installation and a metal cleanout replacement. Jeovanni Corcio (QC) confirmed both completed by mid-afternoon.",
+    "src": "Willy Lopez & Jeovanni Corcio, May 20",
+    "photos": [
+      "media/id20_photo1.jpg"
+    ],
+    "files": [],
+    "include": true
+  },
+  {
+    "id": 21,
+    "d": "2026-06-09, 9:33 AM",
+    "cat": "site",
+    "desc": "Willy Lopez (PM) requested the tankless water heater be added to the permit.",
+    "src": "Willy Lopez, Jun 9",
+    "photos": [],
+    "files": [],
+    "include": true
+  },
+  {
+    "id": 22,
+    "d": "2026-06-11, 3:44–8:12 PM",
+    "cat": "qc",
+    "desc": "Jeovanni Corcio (QC) completed a framing repair, photo-documented around 3:44pm, then marked areas for 1/4\" drywall. Willy Lopez (PM) reviewed and approved that evening.",
+    "src": "Jeovanni Corcio & Willy Lopez, Jun 11",
+    "photos": [
+      "media/id22_photo1.jpg",
+      "media/id22_photo2.jpg",
+      "media/id22_photo3.jpg",
+      "media/id22_photo4.jpg"
+    ],
+    "files": [
+      {
+        "name": "Video, Jeovanni Corcio, framing repair photo-documented, Jun 11 3:48pm",
+        "path": "media/2026-06-11_Jeovanni-Corcio_framing-repair.mp4"
+      }
+    ],
+    "include": true
+  },
+  {
+    "id": 23,
+    "d": "2026-06-15, 5:54 AM–1:06 PM",
+    "cat": "qc",
+    "desc": "Willy Lopez (PM) flagged a framing issue in the morning; Balmore Valasquez Cruz completed and photo-documented the repair by early afternoon.",
+    "src": "Willy Lopez & Balmore Valasquez Cruz, Jun 15",
+    "photos": [
+      "media/id23_photo1.jpg"
+    ],
+    "files": [],
+    "include": true
+  },
+  {
+    "id": 24,
+    "d": "2026-06-17, 10:06 AM",
+    "cat": "site",
+    "desc": "Interior door styles and sizes finalized (six-panel smooth doors) across all rooms.",
+    "src": "Willy Lopez, Jun 17",
+    "photos": [
+      "media/id24_photo1.jpg"
+    ],
+    "files": [],
+    "include": true
+  },
+  {
+    "id": 25,
+    "d": "2026-06-24, 10:30 PM to 2026-06-25, 7:16 PM",
+    "cat": "qc",
+    "desc": "Willy Lopez (PM) assigned a set of framing corrections (bottom plate replacement by the door, stair storage glue, corner beads, medicine cabinet framing, shower grab bar blocking). Jeovanni Corcio (QC) and Gabriel Ferreira completed the work the next day: insulation edges repaired and re-aligned with framing, shower niche and cabinet framing installed, moisture barrier installed under the pressure-treated bottom plate, and stair framing repaired. Why: this insulation/framing alignment directly follows through on the exterior-wall clearance plan set on April 2 (see above) to keep insulation off the exterior walls.",
+    "src": "Willy Lopez, Jeovanni Corcio, Gabriel Ferreira, Jun 24–25",
+    "photos": [
+      "media/id25_photo1.jpg",
+      "media/id25_photo2.jpg"
+    ],
+    "files": [],
+    "include": true
+  },
+  {
+    "id": 26,
+    "d": "2026-06-29, 10:34 AM–5:44 PM",
+    "cat": "site",
+    "desc": "Willy Lopez (PM) called for a site cleanup; Alfredo Lopez cleared excess drywall and trash by early evening.",
+    "src": "Willy Lopez & Alfredo Lopez, Jun 29",
+    "photos": [
+      "media/id26_photo1.jpg"
+    ],
+    "files": [],
+    "include": true
+  },
+  {
+    "id": 27,
+    "d": "2026-07-01, 8:44 PM to 2026-07-02, 1:14 PM",
+    "cat": "site",
+    "desc": "Tile order confirmed with supplier and picked up by Oscar Herrera.",
+    "src": "Willy Lopez & Oscar Herrera, Jul 1–2",
+    "photos": [
+      "media/id27_photo1.jpg"
+    ],
+    "files": [],
+    "include": true
+  },
+  {
+    "id": 28,
+    "d": "2026-07-03, 8:54 AM",
+    "cat": "site",
+    "desc": "Tile delivered to site.",
+    "src": "Oscar Herrera, Jul 3",
+    "photos": [],
+    "files": [],
+    "include": true
+  },
+  {
+    "id": 29,
+    "d": "2026-07-13, 6:04–6:12 AM",
+    "cat": "site",
+    "desc": "Willy Lopez (PM) arranged trim delivery, an iron-to-flat cleanout swap, and followed up on railing and stair tread selections.",
+    "src": "Willy Lopez, Jul 13 AM",
+    "photos": [
+      "media/id29_photo1.jpg"
+    ],
+    "files": [],
+    "include": true
+  },
+  {
+    "id": 30,
+    "d": "2026-07-13, 10:06–10:13 PM",
+    "cat": "qc",
+    "desc": "Willy Lopez (PM) identified and assigned a drywall patch near the upstairs door and a ceiling touch-up by the exterior door.",
+    "src": "Willy Lopez, Jul 13 PM",
+    "photos": [
+      "media/id30_photo1.jpg"
+    ],
+    "files": [],
+    "include": true
+  },
+  {
+    "id": 31,
+    "d": "2026-07-15, 10:13 AM",
+    "cat": "site",
+    "desc": "Railing material ordered (16 balusters).",
+    "src": "Willy Lopez, Jul 15",
+    "photos": [],
+    "files": [],
+    "include": true
+  },
+  {
+    "id": 32,
+    "d": "2026-07-21, 2:32 PM",
+    "cat": "site",
+    "desc": "Additional fireplace hearth reducer ordered.",
+    "src": "Willy Lopez, Jul 21",
+    "photos": [
+      "media/id32_photo1.jpg"
+    ],
+    "files": [],
+    "include": true
+  },
+  {
+    "id": 33,
+    "d": "2026-07-23, 5:19–5:20 PM",
+    "cat": "site",
+    "desc": "Interior doors delivered and installed the same afternoon.",
+    "src": "Javier Cruz-Lopez, Jul 23",
+    "photos": [
+      "media/id33_photo1.jpg"
+    ],
+    "files": [],
+    "include": true
+  },
+  {
+    "id": 34,
+    "d": "2026-07-28, 4:06 PM",
+    "cat": "qc",
+    "desc": "Willy Lopez (PM) documented the exterior handrail condition on site.",
+    "src": "Willy Lopez, Jul 28",
+    "photos": [],
+    "files": [],
+    "include": true
+  },
+  {
+    "id": 35,
+    "d": "2026-07-29, 4:00 PM",
+    "cat": "comm",
+    "desc": "Project review meeting held with the client via Google Meet, confirmed for 4:00 PM that morning by Elena Lupan. Why this meeting happened: the team and client agreed that communication, coordination, and scheduling had not been meeting expectations as the project passed Week 14 without a firm completion date, and both sides wanted a clear, documented reset. Willy Lopez (PM) confirmed the shower pan had been water-tested multiple times during construction, though those tests were not documented at the time. Reviewed and confirmed corrective action on: insulation contact at foundation, concrete patching sequence after plumbing, framing sequencing, bulkhead clearance, and plumbing/lighting placement — the team acknowledged these resulted from coordination and communication breakdowns and committed to improving oversight going forward. Independent third-party inspection option offered for shower pan verification, with the company agreeing to reimburse reasonable inspection costs and correct any verified deficiency. Agreed that Willy Lopez (PM) and Jeovanni Corcio (QC) will continue quality control inspections after each major trade, and that QC reports, inspection documentation, and available photos will be compiled and delivered to the client by Aug 7.",
+    "src": "Meeting summary, Jul 29",
+    "photos": [],
+    "files": [],
+    "include": true
+  },
+  {
+    "id": 36,
+    "d": "2026-07-30 (approx.)",
+    "cat": "comm",
+    "desc": "Following the July 29 meeting, the team contacted the tile installer directly to keep the tile schedule on track. He indicated he might be available that same day, which is why the homeowners were given short notice to meet with him — this was a one-off case of schedule urgency, not the team's standard process. Standard process (confirmed at the meeting) is that the general contractor defines requirements ahead of time and communicates a written plan to the subcontractor before any homeowner involvement; direct homeowner meetings with trades are limited to the electrician, countertop fabricator, and (optionally) the tile installer, when their input concerns selections or preferences.",
+    "src": "Email, Jul 31 (describing the Jul 30 event)",
+    "photos": [],
+    "files": [],
+    "include": true
+  },
+  {
+    "id": 37,
+    "d": "2026-07-31, 5:51 AM",
+    "cat": "qc",
+    "desc": "Pavel Abaev flagged the exterior handrail condition for correction, following up on Willy Lopez's site documentation from two days earlier.",
+    "src": "Pavel Abaev, Jul 31 AM",
+    "photos": [],
+    "files": [],
+    "include": true
+  },
+  {
+    "id": 38,
+    "d": "2026-07-31, 7:49 AM",
+    "cat": "comm",
+    "desc": "Ownership follow-up email sent to client: Pavel Abaev confirmed as primary point of contact with a direct phone line, written confirmation of the shower pan water-test given based on the account of Willy Lopez (PM) and the team who performed and inspected the work, and QC documentation delivery date reaffirmed for August 7. Why now: this followed directly from the July 29 meeting commitments and closed the loop on the client's outstanding written questions (point of contact, phone number, and the shower pan test).",
+    "src": "Email, Jul 31",
+    "photos": [],
+    "files": [],
+    "include": true
+  },
+  {
+    "id": 39,
+    "d": "2026-07-31, 3:39 PM",
+    "cat": "qc",
+    "desc": "Jeovanni Corcio (QC) conducted a post-framing QC checklist review as part of the ongoing per-trade QC cadence confirmed at the July 29 meeting.",
+    "src": "QC checklist, Jul 31",
+    "photos": [],
+    "files": [],
+    "include": true
+  },
+  {
+    "id": 42,
+    "d": "2026-07-31, PM",
+    "cat": "comm",
+    "desc": "Internal office meeting held to prepare a full written response to the client's concerns, attended by project manager Willy Lopez, CEO Pavel Abaev, interior designer Shanae Mobley, sales consultant Eric Campbell, and the VP of Operations.",
+    "src": "Internal meeting, Jul 31",
+    "photos": [],
+    "files": [],
+    "include": true
+  },
+  {
+    "id": 43,
+    "d": "2026-08-03, 6:51 AM",
+    "cat": "qc",
+    "desc": "Email #1 of a four-part response series sent to the client. Quality items reviewed and resolved: concrete patching after plumbing work (acknowledged as the plumber's error; a $200 credit was applied to the project), insulation touching the foundation (reviewed — the below-grade portion of the foundation wall has a moisture barrier and the above-grade portion does not; the specific contact points in question were on the above-grade wall or the barrier itself, which does not carry the same moisture risk; the areas the client asked to have checked were resolved to their satisfaction), bulkhead clearance near the door opening (acknowledged as an oversight; the company committed to correcting the bulkhead at no cost if it were ever to interfere with the door), and the water heater vent condition (confirmed as a temporary, open-space condition rather than a hazard, with an agreed resolution path — either a double-wall vent pipe or a new water heater, pending the client's decision).",
+    "src": "Pavel Abaev, Email #1, Aug 3, 6:51am",
+    "photos": [],
+    "files": [],
+    "include": true
+  },
+  {
+    "id": 44,
+    "d": "2026-08-03, 6:51 AM",
+    "cat": "qc",
+    "desc": "Email #1 (continued): framing sequence and exhaust fan placement addressed. Framing is completed before HVAC, plumbing, and electrical rough-in on basement projects generally, so the finished layout is visible before utilities are locked in; one HVAC item on this project was installed before framing due to a scope requirement, which contributed to the earlier confusion around the exhaust fan location. The client's preferred fan location was not possible due to the joist layout, so it was installed in the closest workable position; an unusual double-floor condition in that ceiling area had not been flagged during an earlier project walkthrough, which was acknowledged as a miss.",
+    "src": "Pavel Abaev, Email #1, Aug 3, 6:51am",
+    "photos": [],
+    "files": [],
+    "include": true
+  },
+  {
+    "id": 45,
+    "d": "2026-08-03, 6:51 AM",
+    "cat": "qc",
+    "desc": "Email #1 (continued): HDMI cable and smoke detector items addressed. TV wall-mount prep was outside the original contract scope and was not billed to the client; an incorrect (non in-wall-rated) cable that had been used was corrected at no charge. Smoke detectors were clarified as a building-inspection item handled by the project manager at a later project stage, rather than part of the electrical inspection; no upstairs smoke detector is required in this case.",
+    "src": "Pavel Abaev, Email #1, Aug 3, 6:51am",
+    "photos": [],
+    "files": [],
+    "include": true
+  },
+  {
+    "id": 46,
+    "d": "2026-08-03, 6:51 AM",
+    "cat": "site",
+    "desc": "Email #1 (continued): hose bib access and water heater selection addressed. The original hose bib location was accessible but not ideal; the client chose a paid relocation over an access panel. Water heater model selection was confirmed as the homeowner's decision by design — the company's scope covers installation, not appliance selection.",
+    "src": "Pavel Abaev, Email #1, Aug 3, 6:51am",
+    "photos": [],
+    "files": [],
+    "include": true
+  },
+  {
+    "id": 47,
+    "d": "2026-08-03, 6:51 AM",
+    "cat": "comm",
+    "desc": "Email #1 (continued): communication structure reset. Going forward, the client's points of contact are Pavel Abaev, Willy Lopez (PM), and the interior designer for selections, plus a dedicated meeting with the countertop fabricator. The company noted that direct client contact with subcontractors, including on pricing, had contributed to conflicting information, and asked that all pricing and coordination run through the company team going forward. The company also directly addressed and denied a client concern that the water heater vent decision was being drawn out to increase cost.",
+    "src": "Pavel Abaev, Email #1, Aug 3, 6:51am",
+    "photos": [],
+    "files": [],
+    "include": true
+  },
+  {
+    "id": 48,
+    "d": "2026-08-03, 6:51 AM",
+    "cat": "comm",
+    "desc": "Email #1 (conclusion): the construction-quality items raised were characterized as within the normal range for remodeling work, with no conditions identified that put the household at risk; all items were either already corrected or scheduled for correction. The company committed to providing a full timeline of events from contract signing to date, and to sending three further emails covering the client's most recent concerns, the questions sent to Shanae Mobley, and next steps.",
+    "src": "Pavel Abaev, Email #1, Aug 3, 6:51am",
+    "photos": [],
+    "files": [],
+    "include": true
+  },
+  {
+    "id": 49,
+    "d": "2026-05-02, 11:08 AM",
+    "cat": "qc",
+    "desc": "John Ring's weekly check-in, transmitted via the automated feedback-form notification system, raised a lead-paint dust safety concern: the team had assured him lead-safe containment practices would be followed before demo, but framers began cutting and creating dust before the work area was covered, and he had to stop them and ask that covering be completed first. Why this matters: lead-safe work practices are a regulatory requirement on pre-1978 homes, and the client's account describes a sequencing lapse rather than a refusal to follow the plan. Per the signed contract's Asbestos and Lead Paint Disclosure clause (initialed by the Owner), the Owner is responsible for disclosing to the Contractor the presence of any known or suspected lead-based paint at the job site prior to the start of work. There is no record or confirmation that this disclosure was made before work began.",
+    "src": "Client weekly-check-in response transmitted by the automated BasementRemodeling.com notification system, May 2, 11:08am",
+    "photos": [
+      "media/id49_photo1.png"
+    ],
+    "files": [],
+    "include": true
+  },
+  {
+    "id": 50,
+    "d": "2026-05-17, 9:05 PM",
+    "cat": "qc",
+    "desc": "John Ring's weekly check-in flagged several rough-in coordination issues: the water heater exhaust pipe needed a bulkhead to clear the finished rec room ceiling, and it took over two weeks of back-and-forth between the plumber and Willy Lopez (PM) to settle on an approach; the bathroom exhaust fan location planned at pre-construction no longer fit once new bathroom piping moved during framing, requiring a fan swap; framers bent and dented the exhaust pipe while building the bulkhead around it, which Willy addressed by cutting back the framing at the client's request; an HDMI cable initially installed was not rated for in-wall use and needed to be replaced with an NEC-compliant cable; there was confusion between the electrician and Willy Lopez over whether existing hard-wired smoke detectors could be replaced with battery units (Montgomery County code does not allow this); and framers temporarily blocked access to the exterior hose bib, resolved by cutting back framing around it. Why: several of these were downstream effects of the water heater venting change, a mid-project scope addition with cascading impacts on framing, electrical, and fixture placement that were worked through in real time rather than planned in advance.",
+    "src": "Client weekly-check-in response transmitted by the automated BasementRemodeling.com notification system, May 17, 9:05pm",
+    "photos": [],
+    "files": [],
+    "include": true
+  },
+  {
+    "id": 51,
+    "d": "2026-05-18, 2:43 PM",
+    "cat": "qc",
+    "desc": "Willy Lopez (PM) proposed a resolution for the bathroom exhaust fan: install it between the joists at the existing vent exit point, adding a half-inch of plywood to bring it flush with the drywall rather than dropping the ceiling further. He also confirmed he would check with the plumber the next day about relocating water lines to help resolve the layout conflict.",
+    "src": "Willy Lopez, May 18, 2:43pm",
+    "photos": [],
+    "files": [],
+    "include": true
+  },
+  {
+    "id": 53,
+    "d": "2026-05-21, 3:25 PM",
+    "cat": "comm",
+    "desc": "Elena Lupan responded to the concrete concern, scheduling Willy Lopez (PM), Jeovanni Corcio (QC), and the plumber to meet at the property the next morning at 8:00 AM to review all flagged areas, including the shower area, together with the client before anything was closed up.",
+    "src": "Elena Lupan, May 21, 3:25pm",
+    "photos": [],
+    "files": [],
+    "include": true
+  },
+  {
+    "id": 54,
+    "d": "2026-05-23, 1:25 PM",
+    "cat": "qc",
+    "desc": "Following the May 22 on-site review, Willy Lopez (PM) confirmed the plan: the plumber would remove and properly refill the affected concrete sections. Willy also committed that, going forward, he and Jeovanni Corcio (QC) would closely follow and inspect subcontractor work after each trade completes their portion, specifically to prevent this kind of issue from recurring.",
+    "src": "Willy Lopez, May 23, 1:25pm",
+    "photos": [],
+    "files": [],
+    "include": true
+  },
+  {
+    "id": 55,
+    "d": "2026-06-25, 7:42 AM",
+    "cat": "qc",
+    "desc": "Before drywall, John Ring documented two additional concerns: insulation was stapled inward from the stud face in some locations and appeared to contact the foundation wall, and portions of the perimeter bottom plate had warped away from the slab. Willy Lopez (PM) responded that Jeovanni Corcio (QC) would come to review and address the items the same day. The client's concern and the company's account of the correction are both retained here as separate viewpoints. This client-reported issue is the same insulation/bottom-plate correction completed by Jeovanni Corcio and Gabriel Ferreira on Jun 24–25 (see above) — it directly follows through on the exterior-wall clearance plan set on April 2.",
+    "src": "John Ring, Jun 25, 7:42–7:56am; Willy Lopez, Jun 25, 7:49am",
+    "photos": [],
+    "files": [],
+    "include": true
+  },
+  {
+    "id": 56,
+    "d": "2026-06-26 to 2026-06-30",
+    "cat": "site",
+    "desc": "Closet door upgrade selected and finalized: both closets upgraded to double doors ($200/door, $400 total), with a louvered-style upgrade ($200/door) and a $200 charge for four short doors per contract. After discussion of available louver styles, full-louvered doors were selected over the half-louvered option to better match the home's existing doors. Willy Lopez (PM) noted the ~2–3 week lead time and flagged that ordering promptly would avoid delaying the schedule once drywall finishing was complete.",
+    "src": "Willy Lopez & John Ring, Jun 26–30",
+    "photos": [],
+    "files": [],
+    "include": true
+  },
+  {
+    "id": 57,
+    "d": "2026-07-12, 10:06 PM",
+    "cat": "comm",
+    "desc": "John Ring's weekly check-in expressed frustration with project delays, describing them as partly the client's own decisions but also attributable to planning gaps, incomplete work, and communication issues. He raised concerns about upcharges he felt could have been predicted with better planning, discrepancies between what Eric Campbell (sales) had described verbally and what the signed contract and Willy Lopez (PM) later described, unanswered design questions to Shanae Mobley, and asked in writing whether the shower pan had been re-tested after Jeovanni Corcio (QC) found nails and debris in it before it was filled with mortar — the first written instance of the question that would recur through late July.",
+    "src": "Client weekly-check-in response transmitted by the automated BasementRemodeling.com notification system, Jul 12, 10:06pm",
+    "photos": [],
+    "files": [],
+    "include": true
+  },
+  {
+    "id": 58,
+    "d": "2026-07-13, 9:27 AM",
+    "cat": "comm",
+    "desc": "Willy Lopez (PM) responded to the July 12 feedback: the water heater replacement, added mid-project and outside the original scope, took about four weeks to finalize and was the single largest driver of schedule impact; door selections were finalized but the late approval affected order/arrival timing (up to 3 weeks for some doors); and railing, paint, and flooring selections were still pending, with some railing materials requiring up to six weeks of lead time. He directed contract-scope disputes to Eric Campbell (sales).",
+    "src": "Willy Lopez, Jul 13, 9:27am",
+    "photos": [],
+    "files": [],
+    "include": true
+  },
+  {
+    "id": 59,
+    "d": "2026-07-17 to 2026-07-18",
+    "cat": "comm",
+    "desc": "John Ring raised a broader process concern: that there had been no design/PM consultation between Eric Campbell's initial sales proposal and the walkthrough held the day before construction began, which he felt caused issues like the water heater/framing conflict to surface too late to plan around; he also raised concern that selections made during an early visit to the company's Hyattsville design center did not appear to be adequately tracked. Willy Lopez (PM) replied the next day, sharing that Shanae Mobley (design coordinator) had been involved in a minor car accident the previous week — she was not seriously injured, but it had put her behind on email responses — and that she would reach out that week to review outstanding selections.",
+    "src": "John Ring, Jul 17, 9:29am; Willy Lopez, Jul 18, 10:06am",
+    "photos": [],
+    "files": [],
+    "include": true
+  },
+  {
+    "id": 60,
+    "d": "2026-07-20, 11:24 AM–3:15 PM",
+    "cat": "site",
+    "desc": "John Ring asked whether the team had everything needed for the painting and tiling work shown on the schedule that week, and requested to see all of Shanae Mobley's design notes on the client's selections to date. Willy Lopez (PM) replied that Shanae would prepare a schematic for final approval before painting and tile proceeded.",
+    "src": "John Ring & Willy Lopez, Jul 20",
+    "photos": [],
+    "files": [],
+    "include": true
+  },
+  {
+    "id": 61,
+    "d": "2026-07-21, 9:13 AM",
+    "cat": "comm",
+    "desc": "John Ring asked for a consolidated decision-tracking document, noting that project decisions had been documented inconsistently across email, text, and verbal conversations. He listed several outstanding design items: final laundry cabinet layout (cabinet next to the laundry, drawers next to the refrigerator); a May 18 request for floating-shelf visualization above the laundry, which he acknowledged was likely too late given drywall was already up; a laundry drying-rack bar request, called a high priority; June 23 tile detail questions (bullnose trim, grout color, shower niche location, curb, threshold); a July 8 request to finalize LVP flooring options; and a July 18 vanity depth confirmation. He also asked about a temporary laundry hookup, noting the family had been without laundry for three months.",
+    "src": "John Ring, Jul 21, 9:13am",
+    "photos": [],
+    "files": [],
+    "include": true
+  },
+  {
+    "id": 62,
+    "d": "2026-07-22, 12:50 PM",
+    "cat": "comm",
+    "desc": "Willy Lopez (PM) confirmed the 30-inch vanity with a 31-inch countertop would work, and that Shanae Mobley would follow up on the remaining design questions (laundry layout, tile details, LVP) within a day or two. He sent images of the standard pressure-treated 2x4 exterior handrail included in the contract, noting it satisfies inspection requirements but that clients sometimes choose to upgrade it, and confirmed Payment #4 was due at the contract's ~75% completion milestone, covering demolition, floor prep, framing, rough plumbing, rough electrical, drywall, doors, and priming completed to date.",
+    "src": "Willy Lopez, Jul 22, 12:50pm",
+    "photos": [],
+    "files": [],
+    "include": true
+  },
+  {
+    "id": 63,
+    "d": "2026-07-23, 11:02 AM",
+    "cat": "comm",
+    "desc": "John Ring followed up that the laundry hookup question remained unaddressed and was significantly affecting the family day to day, and asked for an accounting of design services delivered against the interior-design hours included in the contract before submitting Payment #4. He clarified an important distinction: the railing he had been asking about since the start of the project is the guardrail around the top of the exterior stairwell (a fall-prevention rail), not the pressure-treated 2x4 handrail Willy had described — and that the contract's lack of detail made it unclear which was included. He also confirmed the family would proceed with purchasing the Kohler Quo vanity, and noted that the company's marketing and sales promises had not matched the experience so far, while stating he hoped for a positive outcome he could review well.",
+    "src": "John Ring, Jul 23, 11:02am",
+    "photos": [],
+    "files": [],
+    "include": true
+  },
+  {
+    "id": 64,
+    "d": "2026-07-23 (same day)",
+    "cat": "comm",
+    "desc": "Willy Lopez (PM) explained that temporary laundry hookups are typically only done in the unfinished area of a basement, since the washer/dryer usually need to be moved multiple times as work progresses; as an exception, he offered to provide a temporary hookup in the finished area via a change order if that would help. He reiterated that Payment #4 reflected the ~75% completion milestone already reached.",
+    "src": "Willy Lopez, Jul 23 (reply to John's 11:02am email)",
+    "photos": [],
+    "files": [],
+    "include": true
+  },
+  {
+    "id": 65,
+    "d": "2026-07-27, 10:46 AM",
+    "cat": "comm",
+    "desc": "John Ring sent a detailed complaint to Elena Lupan, Willy Lopez, and Shanae Mobley: very little visible work had occurred the prior week and no tiling had started despite the team having pushed for expedited tile delivery; he requested a detailed accounting of work completed to date, including design services, reflected against recent invoices; he noted repeated attempts to reach Eric Campbell (sales) by phone, text, and email over more than 10 days with no response, and asked whether Eric was still with the company; he reiterated that the exterior stairwell railing question remained unanswered despite being raised multiple times; and he asked directly whether this level of responsiveness was typical of the company's process.",
+    "src": "John Ring, Jul 27, 10:46am",
+    "photos": [],
+    "files": [],
+    "include": true
+  },
+  {
+    "id": 66,
+    "d": "2026-07-27, 11:29 AM",
+    "cat": "comm",
+    "desc": "Elena Lupan replied that this was not the experience the company wants clients to have, and explained that Eric Campbell had been out of the country for the prior 10 days — which was why he had been unreachable — but remained with the company; going forward, Eric would handle contract/sales questions while Willy Lopez (PM) remained the main point of contact for construction, scheduling, and day-to-day production. She committed to gathering complete answers on the tile schedule, the railing, and the outstanding feedback-form items.",
+    "src": "Elena Lupan, Jul 27, 11:29am",
+    "photos": [],
+    "files": [],
+    "include": true
+  },
+  {
+    "id": 67,
+    "d": "2026-07-27, 1:45–3:00 PM",
+    "cat": "comm",
+    "desc": "Willy Lopez (PM) reviewed the contract and clarified that no exterior guardrail was included — he had understood the client already had an existing metal railing around the exterior steps and that only the code-required pressure-treated handrail was missing. He offered to have the company's welder assess and quote a new or upgraded metal railing if desired, and noted that the non-standard window well size would likely require two separate custom covers rather than one, and offered to price options.",
+    "src": "Willy Lopez, Jul 27, 1:45pm & 3:00pm",
+    "photos": [],
+    "files": [],
+    "include": true
+  },
+  {
+    "id": 68,
+    "d": "2026-07-27, 2:38–3:13 PM",
+    "cat": "comm",
+    "desc": "John Ring clarified that the railing being asked about is the guardrail around the stairwell opening (a fall-prevention rail), not the handrail — a distinction that had been raised with Eric Campbell from the start of the project and repeated several times since, but had gone unanswered. He noted the contract's lack of detail made it impossible to tell what was included, and asked for quotes for both the guardrail/railing upgrade and the window well covers. Willy Lopez (PM) confirmed the exterior railing would be quoted, described as metal with a matching handrail, fabricated in an L-shape to match the existing railing.",
+    "src": "John Ring & Willy Lopez, Jul 27, 2:38pm & Jul 28, 1:26pm",
+    "photos": [],
+    "files": [],
+    "include": true
+  },
+  {
+    "id": 69,
+    "d": "2026-07-28, 1:26 PM",
+    "cat": "site",
+    "desc": "Willy Lopez (PM) sent a quote for a new exterior metal railing, fabricated in an L-shape to match the existing railing, along with before/after reference images of the stairwell area, and estimated a 2–3 day fabrication and install window once approved.",
+    "src": "Willy Lopez, Jul 28, 1:26pm",
+    "photos": [],
+    "files": [],
+    "include": true
+  },
+  {
+    "id": 70,
+    "d": "2026-07-28, 2:10–2:31 PM",
+    "cat": "qc",
+    "desc": "John Ring asked Willy Lopez (PM) in writing to specifically confirm whether the shower pan was tested for leaks after Jeovanni Corcio (QC) had found nails and debris in it, and before the pan was filled with mortar. At 2:19pm, Willy Lopez replied in writing: \"Yes per your request we did the water test 3 times.\" John Ring followed up at 2:31pm to clarify that the debris finding and re-test request had come from Jeovanni Corcio, not from him directly, and reiterated that his specific question was whether the test happened after the debris was cleaned out and before the mortar bed was installed. The available correspondence does not establish the exact date or documentary proof of that specific post-cleanup test, so that narrower question remained unresolved in the supplied records at this point. Why this matters: this is the client's most-repeated question, first raised in writing on July 12 and repeated on July 30 (see below) and in the boss's July 29 and July 31 responses — Willy's July 28 email is the team's only written, dated confirmation that water testing occurred, though per the July 29 meeting summary, the tests were not otherwise documented (no photos, video, or dated report).",
+    "src": "John Ring & Wilfredo Lopez, Jul 28, 2:10–2:31pm",
+    "photos": [],
+    "files": [],
+    "include": true
+  },
+  {
+    "id": 71,
+    "d": "2026-07-29, 8:20 AM",
+    "cat": "comm",
+    "desc": "Elena Lupan emailed the client thanking them for raising their concerns over the preceding weeks, and announced that Pavel Abaev (CEO/founder) and Eric Campbell would take the lead as primary points of contact going forward, with Willy Lopez (PM) continuing to support the project behind the scenes with the production team. Communication going forward would be kept to email or text to maintain a clear written record. John Ring requested a same-day call, which Elena Lupan confirmed for 4:00 PM via Google Meet at 9:46am.",
+    "src": "Elena Lupan, Jul 29, 8:20am & 9:46am",
+    "photos": [],
+    "files": [],
+    "include": true
+  },
+  {
+    "id": 72,
+    "d": "2026-07-29, 3:22–9:26 PM",
+    "cat": "site",
+    "desc": "Following a phone conversation with the client on the evening of Monday, July 27, Shanae Mobley (design coordinator) sent follow-up design options: floating vs. glue-down LVP installation methods, a ranked recommendation of Azul Tortuga Loredo as the best-quality LVP option, contract-included carpet runner collections, paint color renderings for the laundry room (Pure White) and main basement area (Swiss Coffee), blue paint options for the bathroom, and a recommended wall-mounted drying rack. She sent a laundry room schematic for approval later that evening; the client raised a room-dimension concern (110\" x 106.75\") that was resolved once they confirmed the washer/dryer were 27\" wide rather than 29\".",
+    "src": "Shanae Mobley & John Ring, Jul 29, 3:22–9:26pm",
+    "photos": [],
+    "files": [],
+    "include": true
+  },
+  {
+    "id": 73,
+    "d": "2026-07-30, 7:10 AM–11:27 PM",
+    "cat": "site",
+    "desc": "Willy Lopez (PM) let the client know the tile installer might begin work that day and asked whether the shower curb and threshold were available on site; John Ring confirmed he would leave them downstairs but would not be home. Separately, Willy Lopez identified that the drain cover the client had purchased (an Xflo model) did not fit the standard shower drain assembly, and substituted a compatible brushed-nickel cover to keep the schedule moving, which John Ring approved that evening.",
+    "src": "Willy Lopez & John Ring, Jul 30, 7:10am–11:27pm",
+    "photos": [],
+    "files": [],
+    "include": true
+  },
+  {
+    "id": 74,
+    "d": "2026-07-30, 9:16 AM",
+    "cat": "comm",
+    "desc": "John Ring raised a process concern about being asked to coordinate directly with subcontractors — citing the plumbers, electricians, and now the tile installer as examples — and asked the company to define requirements and communicate a written plan to subcontractors in advance rather than relying on direct homeowner involvement. He also asked whether Pavel Abaev and Eric Campbell, announced the day before as primary points of contact, would be visiting the site, noted the team still had not shared Pavel's phone number as promised in the original proposal, and asked for any documentation of quality oversight (photos, inspection reports). He again asked in writing for confirmation of the shower water test, including the specific date it was performed, and whether there was any documentation that Jeovanni Corcio's debris concern had been communicated and addressed. Why this matters: this message is the direct trigger for the company's July 31 ownership follow-up email and the internal office meeting held that same day (see above).",
+    "src": "John Ring, Jul 30, 9:16am",
+    "photos": [],
+    "files": [],
+    "include": true
+  },
+  {
+    "id": 75,
+    "d": "2026-07-30, 10:13 AM to 2026-07-31, 4:06 PM",
+    "cat": "site",
+    "desc": "Shanae Mobley (design coordinator) sent a diagram showing a recommended handrail layout (outlined in red) versus the client's previously-installed handrail position (outlined in green), and confirmed roughly 4–5 inches of clearance for the laundry machines. Katherine Fennell replied the same night with laundry cabinet adjustments (three drawers next to the refrigerator), a shiplap clarification question, a request for a wall-mounted drying rod rather than a folding rack, confirmed Pure White paint for the laundry room, a leaning toward Eastern Flooring Grandview LVP, and a question about whether the recommended handrail side-shift was for appearance or code. Shanae Mobley replied the next afternoon, apologizing for having initially miscommunicated which handrail layout was included in the contract (the originally-recommended layout would require additional paid transition pieces beyond the two handrails already priced in); confirmed shiplap is included on 2 of the laundry room's walls per contract; noted the standard 70–72\" drying rod height would leave limited storage room under an 84\" ceiling and offered an on-site consult with Willy Lopez; and flagged the Grandview LVP color as a $734 upcharge.",
+    "src": "Shanae Mobley & Katherine Fennell, Jul 30–31",
+    "photos": [],
+    "files": [],
+    "include": true
+  },
+  {
+    "id": 76,
+    "d": "2026-08-02, 10:54 PM",
+    "cat": "site",
+    "desc": "John Ring approved the updated laundry cabinet layout with one change (switching the handle side on the cabinet next to the washer), requested shiplap be removed from the contract as not worth the added cost, asked whether Pure White or Alabaster paint would look better in the laundry room given that change, finalized paint colors for the rest of the basement (Alabaster for the rec room, hallway, and stairwell; Sea Salt for the bedroom; Niebla Azul for the bathroom), shared a product link for a wall-mounted drying rod, and asked for a quote on the originally-recommended handrail layout.",
+    "src": "John Ring, Aug 2, 10:54pm",
+    "photos": [],
+    "files": [],
+    "include": true
+  },
+  {
+    "id": 77,
+    "d": "2026-08-03, 7:57 AM",
+    "cat": "comm",
+    "desc": "Pavel Abaev (CEO) replied point-by-point to the client's selections questions. On the cabinet handle switch: confirmed it's doable, and transparently explained that small hinge screw holes from the factory-mounted side would remain visible on the interior edge of the cabinet after the swap, and that the door would briefly appear on the original side mid-install before the swap is completed — flagged in advance so the client wouldn't mistake it for an error. On shiplap: agreed to issue a credit change order for its removal. On the laundry paint color: left the final call to the client rather than the designer. On the drying rod: explained that a specific, in-stock product (not a general concept) was needed to price and install it, since mounting, blocking, and labor depend on the exact item, and since the client's linked product was out of stock, offered two paths — provide a new in-stock product, or defer the decision entirely, noting explicitly that this is a simple surface-mounted item a handyman could add anytime after project completion, and that \"given everything you've said about feeling rushed on decisions, this is one decision that truly doesn't need to be rushed.\" On the handrail: provided a quote for the originally-recommended layout (~$1,100–$1,200 above the standard 2-handrail layout already priced into the contract), explaining that code requires a continuous handrail from top to bottom of the stairs, and that the inner side of this particular stairwell cannot be run as a single straight rail without a break, requiring transition fittings shown in accompanying photos — while personally recommending against the upgrade in favor of the simpler straight-rail option on the side of the staircase with a wall.",
+    "src": "Pavel Abaev, Email #3, Aug 3, 7:57am",
+    "photos": [],
+    "files": [],
+    "include": true
+  },
+  {
+    "id": 78,
+    "d": "2026-08-04, 6:28 AM",
+    "cat": "comm",
+    "desc": "Shanae Mobley (design coordinator) sent the final paint, flooring, railing, and laundry schematics (Ring Paint, Ring Flooring, Ring Railing, Ring Laundry) and asked the clients to confirm each one in writing before ordering materials. For the paint schematic, she recommended painting the ceiling and bulkheads the same color — a Sherwin-Williams match to Benjamin Moore's Chantilly Lace OC-65 — as the top-rated option among three bulkhead paint configurations presented, for maximizing perceived ceiling height. This was a formal approval request intended to close the remaining selection dependencies before ordering and scheduling.",
+    "src": "Shanae Mobley, Aug 4, 6:28am",
+    "photos": [],
+    "files": [],
+    "include": true
+  },
+  {
+    "id": 79,
+    "d": "2026-08-04, 8:05 AM",
+    "cat": "comm",
+    "desc": "John Ring confirmed final selections: accepted the small interior hinge holes from the cabinet handle-side swap, confirmed Pure White for the laundry room, confirmed the 2-piece handrail layout already priced into the contract (declining the ~$1,100–$1,200 upgrade), and confirmed the Eastern Grandview Elverton LVP flooring color. All four schematics were sent for the client's approval following this email.",
+    "src": "John Ring, Aug 4, 8:05am",
+    "photos": [],
+    "files": [],
+    "include": true
+  },
+  {
+    "id": 80,
+    "d": "2026-03-31, 8:16 AM",
+    "cat": "comm",
+    "desc": "Basement remodeling contract fully executed: all parties completed and signed the contract for the Ring-Bethesda project.",
+    "src": "Slack automation message, Mar 31, 8:16am",
+    "photos": [],
+    "files": [
+      {
+        "name": "John Ring Contract - full signed packet (31pp)",
+        "path": "media/id80_file1.pdf"
+      }
+    ],
+    "include": true
+  },
+  {
+    "id": 81,
+    "d": "2026-03-31, 8:58 AM",
+    "cat": "sched",
+    "desc": "Eric Campbell (sales) submitted the sale with project notes for the team: address 5801 Searl Ter, Bethesda, MD 20816; the basement had previously flooded, and the client had already demoed everything except a few interior wall framing sections and had a French drain installed, so only minor adjustments to the interior framed walls were needed. Scope: rec room, bathroom, bedroom with existing egress door, and a laundry room with cabinets and countertop — noted at this stage as \"a mixture of what I came up with and clients came up with, so it is close, just needs some tweaks.\" A separate window company was installing the basement windows and exterior door, with a possible timeline as late as mid-May, flagged for the PM to coordinate around. The client's concern about fiberglass insulation touching the exterior walls (despite the vapor barrier) was flagged here at the sale stage, before construction began — the earliest record of a concern that recurred throughout the project (see April 2 framing plan, and the June 25 insulation/bottom-plate issue, above).",
+    "src": "Eric Campbell, sale submission notes, Mar 31, 8:58am",
+    "photos": [],
+    "files": [],
+    "include": true
+  },
+  {
+    "id": 82,
+    "d": "2026-07-10, 11:17 AM",
+    "cat": "site",
+    "desc": "Client's baseboard selection confirmed: WM-623.",
+    "src": "Willy Lopez, Jul 10, 11:17am",
+    "photos": [],
+    "files": [],
+    "include": true
+  },
+  {
+    "id": 83,
+    "d": "2026-03-04, 9:13 AM",
+    "cat": "pay",
+    "desc": "Project invoice C-INV-260303-31190 for $1,000.00 was paid in full on Mar 4, 2026 at 9:13 AM, per QuickBooks' automated payment confirmation email to the company's billing inbox. Based on the date embedded in the invoice number (a naming convention used consistently across this project's invoices), the invoice itself was issued on or about Mar 3, 2026.",
+    "src": "System automatic message (QuickBooks payment notification), sent to billing@basementremodeling.com, Mar 4, 2026 at 9:13 AM. Invoice-issued date is inferred from the invoice numbering convention, not from a separate \"invoice sent\" notification (QuickBooks does not send one to this inbox) — cross-confirmed where possible against dated change-order emails.",
+    "photos": [],
+    "files": [],
+    "include": true
+  },
+  {
+    "id": 84,
+    "d": "2026-03-31, 8:22 AM",
+    "cat": "pay",
+    "desc": "Project invoice C-INV-260331-94436 for $10,229.30 was paid in full on Mar 31, 2026 at 8:22 AM, per QuickBooks' automated payment confirmation email to the company's billing inbox. Based on the date embedded in the invoice number (a naming convention used consistently across this project's invoices), the invoice itself was issued on or about Mar 31, 2026.",
+    "src": "System automatic message (QuickBooks payment notification), sent to billing@basementremodeling.com, Mar 31, 2026 at 8:22 AM. Invoice-issued date is inferred from the invoice numbering convention, not from a separate \"invoice sent\" notification (QuickBooks does not send one to this inbox) — cross-confirmed where possible against dated change-order emails.",
+    "photos": [],
+    "files": [],
+    "include": true
+  },
+  {
+    "id": 85,
+    "d": "2026-04-07, 11:12 AM",
+    "cat": "pay",
+    "desc": "Project invoice C-INV-260402-33725 for $520.00 was paid in full on Apr 7, 2026 at 11:12 AM, per QuickBooks' automated payment confirmation email to the company's billing inbox. Based on the date embedded in the invoice number (a naming convention used consistently across this project's invoices), the invoice itself was issued on or about Apr 2, 2026.",
+    "src": "System automatic message (QuickBooks payment notification), sent to billing@basementremodeling.com, Apr 7, 2026 at 11:12 AM. Invoice-issued date is inferred from the invoice numbering convention, not from a separate \"invoice sent\" notification (QuickBooks does not send one to this inbox) — cross-confirmed where possible against dated change-order emails.",
+    "photos": [],
+    "files": [],
+    "include": true
+  },
+  {
+    "id": 86,
+    "d": "2026-04-27, 6:54 PM",
+    "cat": "pay",
+    "desc": "Project invoice C-INV-260421-18495 for $15,343.95 was paid in full on Apr 27, 2026 at 6:54 PM, per QuickBooks' automated payment confirmation email to the company's billing inbox. Based on the date embedded in the invoice number (a naming convention used consistently across this project's invoices), the invoice itself was issued on or about Apr 21, 2026.",
+    "src": "System automatic message (QuickBooks payment notification), sent to billing@basementremodeling.com, Apr 27, 2026 at 6:54 PM. Invoice-issued date is inferred from the invoice numbering convention, not from a separate \"invoice sent\" notification (QuickBooks does not send one to this inbox) — cross-confirmed where possible against dated change-order emails.",
+    "photos": [],
+    "files": [],
+    "include": true
+  },
+  {
+    "id": 87,
+    "d": "2026-04-27, 6:54 PM",
+    "cat": "pay",
+    "desc": "Change order invoice C-INV-CO-260427-41756 for $5,955.00 was paid in full on Apr 27, 2026 at 6:54 PM, per QuickBooks' automated payment confirmation email to the company's billing inbox. Based on the date embedded in the invoice number (a naming convention used consistently across this project's invoices), the invoice itself was issued on or about Apr 27, 2026.",
+    "src": "System automatic message (QuickBooks payment notification), sent to billing@basementremodeling.com, Apr 27, 2026 at 6:54 PM. Invoice-issued date is inferred from the invoice numbering convention, not from a separate \"invoice sent\" notification (QuickBooks does not send one to this inbox) — cross-confirmed where possible against dated change-order emails.",
+    "photos": [],
+    "files": [],
+    "include": true
+  },
+  {
+    "id": 88,
+    "d": "2026-05-01, 11:14 AM",
+    "cat": "pay",
+    "desc": "Change order invoice C-INV-CO-260501-85263 for $400.00 was paid in full on May 1, 2026 at 11:14 AM, per QuickBooks' automated payment confirmation email to the company's billing inbox. Based on the date embedded in the invoice number (a naming convention used consistently across this project's invoices), the invoice itself was issued on or about May 1, 2026.",
+    "src": "System automatic message (QuickBooks payment notification), sent to billing@basementremodeling.com, May 1, 2026 at 11:14 AM. Invoice-issued date is inferred from the invoice numbering convention, not from a separate \"invoice sent\" notification (QuickBooks does not send one to this inbox) — cross-confirmed where possible against dated change-order emails.",
+    "photos": [],
+    "files": [],
+    "include": true
+  },
+  {
+    "id": 89,
+    "d": "2026-05-12, 12:44 PM",
+    "cat": "pay",
+    "desc": "Change order invoice C-INV-CO-260508-68128 for $1,003.00 was paid in full on May 12, 2026 at 12:44 PM, per QuickBooks' automated payment confirmation email to the company's billing inbox. Based on the date embedded in the invoice number (a naming convention used consistently across this project's invoices), the invoice itself was issued on or about May 8, 2026.",
+    "src": "System automatic message (QuickBooks payment notification), sent to billing@basementremodeling.com, May 12, 2026 at 12:44 PM. Invoice-issued date is inferred from the invoice numbering convention, not from a separate \"invoice sent\" notification (QuickBooks does not send one to this inbox) — cross-confirmed where possible against dated change-order emails.",
+    "photos": [],
+    "files": [],
+    "include": true
+  },
+  {
+    "id": 90,
+    "d": "2026-05-12, 8:18 AM",
+    "cat": "pay",
+    "desc": "Change order invoice C-INV-CO-260511-77213 for $5,955.00 was paid in full on May 12, 2026 at 8:18 AM, per QuickBooks' automated payment confirmation email to the company's billing inbox. Based on the date embedded in the invoice number (a naming convention used consistently across this project's invoices), the invoice itself was issued on or about May 11, 2026.",
+    "src": "System automatic message (QuickBooks payment notification), sent to billing@basementremodeling.com, May 12, 2026 at 8:18 AM. Invoice-issued date is inferred from the invoice numbering convention, not from a separate \"invoice sent\" notification (QuickBooks does not send one to this inbox) — cross-confirmed where possible against dated change-order emails.",
+    "photos": [],
+    "files": [],
+    "include": true
+  },
+  {
+    "id": 91,
+    "d": "2026-05-14, 6:46 AM",
+    "cat": "pay",
+    "desc": "Change order invoice C-INV-CO-260513-04740 for $720.00 was paid in full on May 14, 2026 at 6:46 AM, per QuickBooks' automated payment confirmation email to the company's billing inbox. Based on the date embedded in the invoice number (a naming convention used consistently across this project's invoices), the invoice itself was issued on or about May 13, 2026.",
+    "src": "System automatic message (QuickBooks payment notification), sent to billing@basementremodeling.com, May 14, 2026 at 6:46 AM. Invoice-issued date is inferred from the invoice numbering convention, not from a separate \"invoice sent\" notification (QuickBooks does not send one to this inbox) — cross-confirmed where possible against dated change-order emails.",
+    "photos": [],
+    "files": [],
+    "include": true
+  },
+  {
+    "id": 92,
+    "d": "2026-05-31, 3:14 PM",
+    "cat": "pay",
+    "desc": "Project invoice C-INV-260515-57434 for $25,573.25 was paid in full on May 31, 2026 at 3:14 PM, per QuickBooks' automated payment confirmation email to the company's billing inbox. Based on the date embedded in the invoice number (a naming convention used consistently across this project's invoices), the invoice itself was issued on or about May 15, 2026.",
+    "src": "System automatic message (QuickBooks payment notification), sent to billing@basementremodeling.com, May 31, 2026 at 3:14 PM. Invoice-issued date is inferred from the invoice numbering convention, not from a separate \"invoice sent\" notification (QuickBooks does not send one to this inbox) — cross-confirmed where possible against dated change-order emails.",
+    "photos": [],
+    "files": [],
+    "include": true
+  },
+  {
+    "id": 93,
+    "d": "2026-06-01, 10:01 AM",
+    "cat": "pay",
+    "desc": "Change order invoice C-INV-CO-260526-31581 for $800.00 was paid in full on Jun 1, 2026 at 10:01 AM, per QuickBooks' automated payment confirmation email to the company's billing inbox. Based on the date embedded in the invoice number (a naming convention used consistently across this project's invoices), the invoice itself was issued on or about May 26, 2026.",
+    "src": "System automatic message (QuickBooks payment notification), sent to billing@basementremodeling.com, Jun 1, 2026 at 10:01 AM. Invoice-issued date is inferred from the invoice numbering convention, not from a separate \"invoice sent\" notification (QuickBooks does not send one to this inbox) — cross-confirmed where possible against dated change-order emails.",
+    "photos": [],
+    "files": [],
+    "include": true
+  },
+  {
+    "id": 94,
+    "d": "2026-06-01, 12:45 PM",
+    "cat": "pay",
+    "desc": "Change order invoice C-INV-CO-260528-50187 for $1,850.00 was paid in full on Jun 1, 2026 at 12:45 PM, per QuickBooks' automated payment confirmation email to the company's billing inbox. Based on the date embedded in the invoice number (a naming convention used consistently across this project's invoices), the invoice itself was issued on or about May 28, 2026. Corresponds to the change order Willy Lopez emailed to John Ring and Katherine Fennell on May 28 (Change order C-CO-260528-50187), which covered separately itemized items including a tankless water heater installation and return water line work after a phone-call misunderstanding about what was included.",
+    "src": "System automatic message (QuickBooks payment notification), sent to billing@basementremodeling.com, Jun 1, 2026 at 12:45 PM. Invoice-issued date is inferred from the invoice numbering convention, not from a separate \"invoice sent\" notification (QuickBooks does not send one to this inbox) — cross-confirmed where possible against dated change-order emails.",
+    "photos": [],
+    "files": [],
+    "include": true
+  },
+  {
+    "id": 95,
+    "d": "2026-06-02, 8:24 AM",
+    "cat": "pay",
+    "desc": "Change order invoice C-INV-CO-260520-94988 for $3,000.00 was paid in full on Jun 2, 2026 at 8:24 AM, per QuickBooks' automated payment confirmation email to the company's billing inbox. Based on the date embedded in the invoice number (a naming convention used consistently across this project's invoices), the invoice itself was issued on or about May 20, 2026.",
+    "src": "System automatic message (QuickBooks payment notification), sent to billing@basementremodeling.com, Jun 2, 2026 at 8:24 AM. Invoice-issued date is inferred from the invoice numbering convention, not from a separate \"invoice sent\" notification (QuickBooks does not send one to this inbox) — cross-confirmed where possible against dated change-order emails.",
+    "photos": [],
+    "files": [],
+    "include": true
+  },
+  {
+    "id": 96,
+    "d": "2026-06-29, 9:53 AM",
+    "cat": "pay",
+    "desc": "Change order invoice C-INV-CO-260625-90069 for $1,320.00 was paid in full on Jun 29, 2026 at 9:53 AM, per QuickBooks' automated payment confirmation email to the company's billing inbox. Based on the date embedded in the invoice number (a naming convention used consistently across this project's invoices), the invoice itself was issued on or about Jun 25, 2026. Corresponds to the change order Willy Lopez emailed to John Ring and Katherine Fennell on Jun 25 (Change order C-CO-260625-90069, grab bar / bathroom hardware related); John Ring confirmed by email on Jun 29 that he had paid this invoice.",
+    "src": "System automatic message (QuickBooks payment notification), sent to billing@basementremodeling.com, Jun 29, 2026 at 9:53 AM. Invoice-issued date is inferred from the invoice numbering convention, not from a separate \"invoice sent\" notification (QuickBooks does not send one to this inbox) — cross-confirmed where possible against dated change-order emails.",
+    "photos": [],
+    "files": [],
+    "include": true
+  },
+  {
+    "id": 97,
+    "d": "2026-07-02, 9:25 AM",
+    "cat": "pay",
+    "desc": "Change order invoice C-INV-CO-260630-04429 for $1,000.00 was paid in full on Jul 2, 2026 at 9:25 AM, per QuickBooks' automated payment confirmation email to the company's billing inbox. Based on the date embedded in the invoice number (a naming convention used consistently across this project's invoices), the invoice itself was issued on or about Jul 2, 2026.",
+    "src": "System automatic message (QuickBooks payment notification), sent to billing@basementremodeling.com, Jul 2, 2026 at 9:25 AM. Invoice-issued date is inferred from the invoice numbering convention, not from a separate \"invoice sent\" notification (QuickBooks does not send one to this inbox) — cross-confirmed where possible against dated change-order emails.",
+    "photos": [],
+    "files": [],
+    "include": true
+  },
+  {
+    "id": 98,
+    "d": "2026-05-06, 4:39 PM",
+    "cat": "qc",
+    "desc": "WSSC — Groundwork inspection — PASSED. WSSC (Washington Suburban Sanitary Commission) groundwork inspection passed. Why this matters: this inspection checks that underground plumbing and drainage work meets code before the concrete floor slab is poured and the ground is closed back up — the last point this work can be verified without breaking up the slab. Originally scheduled for May 6; an earlier May 6 date on the same inspection had been cancelled and rescheduled before this pass.",
+    "src": "System automatic message (Slack), #inspections channel inspection-tracking automation, May 6, 2026 at 4:39 PM",
+    "photos": [],
+    "files": [],
+    "include": true
+  },
+  {
+    "id": 99,
+    "d": "2026-05-12, 4:34 PM",
+    "cat": "qc",
+    "desc": "WSSC — Close-in / Rough-in inspection — PASSED. WSSC close-in/rough-in inspection passed, covering the plumbing rough-in before it was enclosed behind walls and insulation. Feedback for the original May 11 inspection date had been reported missing before this pass was logged on May 12.",
+    "src": "System automatic message (Slack), #inspections channel inspection-tracking automation, May 12, 2026 at 4:34 PM",
+    "photos": [],
+    "files": [],
+    "include": true
+  },
+  {
+    "id": 100,
+    "d": "2026-06-15, 4:28 PM",
+    "cat": "qc",
+    "desc": "Building — Frame / Close-in / Rough-in inspection — PASSED. County building department's frame/close-in/rough-in inspection passed, confirming the framing met code before insulation and drywall closed it in. This inspection had been cancelled and rescheduled once (originally set for Jun 3) before passing.",
+    "src": "System automatic message (Slack), #inspections channel inspection-tracking automation, Jun 15, 2026 at 4:28 PM",
+    "photos": [],
+    "files": [],
+    "include": true
+  },
+  {
+    "id": 101,
+    "d": "2026-06-15, 4:29 PM",
+    "cat": "qc",
+    "desc": "Electrical — Close-in / Rough-in inspection — PASSED. County electrical rough-in inspection passed, confirming the wiring met code before the walls were closed in. This inspection had been cancelled and rescheduled once (originally set for Jun 3) before passing.",
+    "src": "System automatic message (Slack), #inspections channel inspection-tracking automation, Jun 15, 2026 at 4:29 PM",
+    "photos": [],
+    "files": [],
+    "include": true
+  },
+  {
+    "id": 102,
+    "d": "2026-06-15, 4:30 PM",
+    "cat": "qc",
+    "desc": "Mechanical — Close-in / Rough-in inspection — PASSED. County mechanical rough-in inspection passed, covering HVAC/ductwork before it was enclosed. This inspection had been cancelled and rescheduled once (originally set for Jun 3) before passing.",
+    "src": "System automatic message (Slack), #inspections channel inspection-tracking automation, Jun 15, 2026 at 4:30 PM",
+    "photos": [],
+    "files": [],
+    "include": true
+  },
+  {
+    "id": 103,
+    "d": "2026-06-22, 4:20 PM",
+    "cat": "qc",
+    "desc": "WSSC — Close-in / Rough-in (second pass) inspection — PASSED. A second WSSC close-in/rough-in inspection passed. Feedback for the original Jun 18 inspection date had been reported missing, and the inspection was rescheduled twice (Jun 18 to Jun 22) before this pass was logged.",
+    "src": "System automatic message (Slack), #inspections channel inspection-tracking automation, Jun 22, 2026 at 4:20 PM",
+    "photos": [],
+    "files": [],
+    "include": true
+  },
+  {
+    "id": 104,
+    "d": "2026-06-23, 3:41 PM",
+    "cat": "qc",
+    "desc": "Building — Insulation / Close-in / Rough-in inspection — PASSED. Insulation/close-in inspection passed, confirming insulation installation met code before drywall closed the walls. (Logged in the scheduling system as a Prince George's County inspection restricted to close-in review only; the project address is in Montgomery County, so this label may reflect an internal scheduling note rather than the inspecting jurisdiction.)",
+    "src": "System automatic message (Slack), #inspections channel inspection-tracking automation, Jun 23, 2026 at 3:41 PM",
+    "photos": [],
+    "files": [],
+    "include": true
+  }
+]
