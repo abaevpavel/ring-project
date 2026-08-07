@@ -823,12 +823,7 @@
     "desc": "Project invoice C-INV-260331-94436 for $10,229.30 was paid in full on Mar 31, 2026 at 8:22 AM, per QuickBooks' automated payment confirmation email to the company's billing inbox. Based on the date embedded in the invoice number (a naming convention used consistently across this project's invoices), the invoice itself was issued on or about Mar 31, 2026.",
     "src": "System automatic message (QuickBooks payment notification), sent to billing@basementremodeling.com, Mar 31, 2026 at 8:22 AM. Invoice-issued date is inferred from the invoice numbering convention, not from a separate \"invoice sent\" notification (QuickBooks does not send one to this inbox) — cross-confirmed where possible against dated change-order emails.",
     "photos": [],
-    "files": [
-      {
-        "name": "Basement Finishing and Remodeling Lutherville-MD 01.jpg",
-        "path": "media/id84_1786042826130.jpg"
-      }
-    ],
+    "files": [],
     "include": true
   },
   {
