@@ -808,12 +808,7 @@
     "desc": "Project invoice C-INV-260303-31190 for $1,000.00 was paid in full on Mar 4, 2026 at 9:13 AM, per QuickBooks' automated payment confirmation email to the company's billing inbox. Based on the date embedded in the invoice number (a naming convention used consistently across this project's invoices), the invoice itself was issued on or about Mar 3, 2026.",
     "src": "System automatic message (QuickBooks payment notification), sent to billing@basementremodeling.com, Mar 4, 2026 at 9:13 AM. Invoice-issued date is inferred from the invoice numbering convention, not from a separate \"invoice sent\" notification (QuickBooks does not send one to this inbox) — cross-confirmed where possible against dated change-order emails.",
     "photos": [],
-    "files": [
-      {
-        "name": "BasementPhoto_24.jpg",
-        "path": "media/id83_1786043608612.jpg"
-      }
-    ],
+    "files": [],
     "include": true
   },
   {
