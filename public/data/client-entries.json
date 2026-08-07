@@ -353,7 +353,12 @@
       "media/id22_1786059476596_553tq.jpg",
       "media/id22_1786059522845_0if3m.jpg"
     ],
-    "files": [],
+    "files": [
+      {
+        "name": "2026-06-11_Jeovanni-Corcio_framing-repair_compressed.mp4",
+        "path": "media/id22_1786118005071.mp4"
+      }
+    ],
     "include": true
   },
   {
