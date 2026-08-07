@@ -387,7 +387,12 @@
       "media/id25_1786108084294_i2ogq.jpg",
       "media/id25_1786108084426_hbso4.jpg"
     ],
-    "files": [],
+    "files": [
+      {
+        "name": "VideoClip_2026-06-25_compressed.mp4",
+        "path": "media/id25_1786113659880.mp4"
+      }
+    ],
     "include": true
   },
   {

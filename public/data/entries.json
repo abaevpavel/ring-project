@@ -434,6 +434,10 @@
         "name": "Slack video, Jeovanni Corcio, drywall progress, Jun 25 2:34pm (company Slack login required)",
         "url": "https://achgroupllc.slack.com/files/U05MAKQN9RR/F0BE2AGM8BA/video_clip__2026-06-25_14_34_01_.mov",
         "external": true
+      },
+      {
+        "name": "VideoClip_2026-06-25_compressed.mp4",
+        "path": "media/id25_1786113659880.mp4"
       }
     ],
     "include": true
