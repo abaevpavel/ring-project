@@ -1019,7 +1019,12 @@
     "desc": "POST_FRAMING_QC",
     "src": "",
     "photos": [],
-    "files": [],
+    "files": [
+      {
+        "name": "04-POST_FRAMING_QC_compressed2.pdf",
+        "path": "media/id106_1786120428642.pdf"
+      }
+    ],
     "include": true
   }
 ]
