@@ -539,6 +539,10 @@
         "name": "Slack video, Willy Lopez, Jul 21 2:33pm (company Slack login required)",
         "url": "https://achgroupllc.slack.com/files/U05MAKQN9RR/F0BJYJ9NW20/img_3819.mov",
         "external": true
+      },
+      {
+        "name": "IMG_6201_compressed.mp4",
+        "path": "media/id32_1786113125300.mp4"
       }
     ],
     "include": true
