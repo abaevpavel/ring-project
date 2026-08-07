@@ -269,6 +269,10 @@
         "name": "Slack video, Alfredo Lopez, May 8 11:30am (company Slack login required)",
         "url": "https://achgroupllc.slack.com/files/U05MAKQN9RR/F0B24NFRUAK/img_6680.mov",
         "external": true
+      },
+      {
+        "name": "IMG_6680_compressed.mp4",
+        "path": "media/id16_1786115854317.mp4"
       }
     ],
     "include": true
