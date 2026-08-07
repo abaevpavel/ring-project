@@ -994,7 +994,7 @@
     "id": 103,
     "d": "2026-06-22, 4:20 PM",
     "cat": "qc",
-    "desc": "WSSC — Close-in / Rough-in (second pass) inspection — PASSED. A second WSSC close-in/rough-in inspection passed. Feedback for the original Jun 18 inspection date had been reported missing, and the inspection was rescheduled twice (Jun 18 to Jun 22) before this pass was logged.",
+    "desc": "WSSC — Close-in / Rough-in (second pass) inspection — PASSED. A second WSSC close-in/rough-in inspection passed. Feedback for the original Jun 18 inspection date had been reported missing, and the inspection was rescheduled twice (Jun 18 to Jun 22) before this pass was logged.\n\n*Inspection had to be redone due to the water heater.",
     "src": "System automatic message (Slack), #inspections channel inspection-tracking automation, Jun 22, 2026 at 4:20 PM",
     "photos": [],
     "files": [],
