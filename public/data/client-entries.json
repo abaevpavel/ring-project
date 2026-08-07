@@ -293,7 +293,12 @@
       "media/id19_1786059073383_09pop.jpg",
       "media/id19_1786059073447_ta0j4.jpg"
     ],
-    "files": [],
+    "files": [
+      {
+        "name": "2026-05-15_Javier-CruzLopez_framing-repair_compressed.mp4",
+        "path": "media/id19_1786115961136.mp4"
+      }
+    ],
     "include": true
   },
   {
