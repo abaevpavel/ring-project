@@ -349,6 +349,10 @@
         "name": "Slack video, Jeovanni Corcio, exhaust fan installed, May 20 2:05pm (company Slack login required)",
         "url": "https://achgroupllc.slack.com/files/U05MAKQN9RR/F0B5Z35N56C/img_5217.mov",
         "external": true
+      },
+      {
+        "name": "IMG_5217_compressed.mp4",
+        "path": "media/id20_1786116094727.mp4"
       }
     ],
     "include": true

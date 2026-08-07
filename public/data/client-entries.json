@@ -316,7 +316,12 @@
       "media/id20_1786059372755_dncf4.jpg",
       "media/id20_1786059372798_rl74q.jpg"
     ],
-    "files": [],
+    "files": [
+      {
+        "name": "IMG_5217_compressed.mp4",
+        "path": "media/id20_1786116094727.mp4"
+      }
+    ],
     "include": true
   },
   {
