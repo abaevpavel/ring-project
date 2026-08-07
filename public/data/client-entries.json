@@ -174,7 +174,12 @@
       "media/id13_photo1.jpg",
       "media/id13_1786045506562_mldqi.jpg"
     ],
-    "files": [],
+    "files": [
+      {
+        "name": "IMG_2340_compressed.mp4",
+        "path": "media/id13_1786115722847.mp4"
+      }
+    ],
     "include": true
   },
   {
