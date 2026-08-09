@@ -1038,7 +1038,7 @@
     "id": 104,
     "d": "2026-06-23, 3:41 PM",
     "cat": "qc",
-    "desc": "Building — Insulation / Close-in / Rough-in inspection — PASSED. Insulation/close-in inspection passed, confirming insulation installation met code before drywall closed the walls. (Logged in the scheduling system as a Prince George's County inspection restricted to close-in review only; the project address is in Montgomery County, so this label may reflect an internal scheduling note rather than the inspecting jurisdiction.)\n\n*Insulation inspection ",
+    "desc": "Building — Insulation inspection — PASSED, confirming insulation installation met code before drywall closed the walls. (Logged in the scheduling system as a Prince George's County inspection restricted to close-in review only; the project address is in Montgomery County, so this label may reflect an internal scheduling note rather than the inspecting jurisdiction.)\n\n*Insulation inspection ",
     "src": "System automatic message (Slack), #inspections channel inspection-tracking automation, Jun 23, 2026 at 3:41 PM",
     "photos": [],
     "files": [],
