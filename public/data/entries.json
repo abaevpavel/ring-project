@@ -148,16 +148,6 @@
     ],
     "files": [
       {
-        "name": "Slack video, Willy Lopez, Apr 30 4:31pm (company Slack login required)",
-        "url": "https://achgroupllc.slack.com/files/U05MAKQN9RR/F0B0ZRP7HNW/79927369055__72c5f7a6-f7ec-45c8-9b34-973e24a5a528.mov",
-        "external": true
-      },
-      {
-        "name": "Slack video, Willy Lopez, Apr 30 5:27pm (company Slack login required)",
-        "url": "https://achgroupllc.slack.com/files/U05MAKQN9RR/F0B1UFEQCL8/79927255796__2bdfc24b-9d15-442a-b1ac-3f71ce18828f.mov",
-        "external": true
-      },
-      {
         "name": "79927369055__72C5F7A6-F7EC-45C8-9B34-973E24A5A528.mov",
         "path": "media/id12_1786045413382.mov"
       },
@@ -179,11 +169,6 @@
       "media/id13_1786045506562_mldqi.jpg"
     ],
     "files": [
-      {
-        "name": "Slack video, Willy Lopez, May 1 11:44am (company Slack login required)",
-        "url": "https://achgroupllc.slack.com/files/U05MAKQN9RR/F0B1HRJDEBT/img_2340.mov",
-        "external": true
-      },
       {
         "name": "IMG_2340_compressed.mp4",
         "path": "media/id13_1786115722847.mp4"
@@ -251,11 +236,6 @@
     "photos": [],
     "files": [
       {
-        "name": "Slack video, Alfredo Lopez, May 8 11:30am (company Slack login required)",
-        "url": "https://achgroupllc.slack.com/files/U05MAKQN9RR/F0B24NFRUAK/img_6680.mov",
-        "external": true
-      },
-      {
         "name": "IMG_6680_compressed.mp4",
         "path": "media/id16_1786115854317.mp4"
       }
@@ -300,14 +280,6 @@
     ],
     "files": [
       {
-        "name": "Video, Oscar Herrera, fire-stopping 99% complete, May 15 12:19pm (company Slack login required)",
-        "url": "https://achgroupllc.slack.com/files/U05MAKQN9RR/F0B40TZPQN9/img_3851.mov"
-      },
-      {
-        "name": "Video, Javier Cruz-Lopez, framing repair complete, May 15 1:08pm (company Slack login required)",
-        "url": "https://achgroupllc.slack.com/files/U05MAKQN9RR/F0B489X2PRS/video_clip__2026-05-15_13_08_20_.mov"
-      },
-      {
         "name": "2026-05-15_Javier-CruzLopez_framing-repair_compressed.mp4",
         "path": "media/id19_1786115961136.mp4"
       },
@@ -330,11 +302,6 @@
       "media/id20_1786059372798_rl74q.jpg"
     ],
     "files": [
-      {
-        "name": "Slack video, Jeovanni Corcio, exhaust fan installed, May 20 2:05pm (company Slack login required)",
-        "url": "https://achgroupllc.slack.com/files/U05MAKQN9RR/F0B5Z35N56C/img_5217.mov",
-        "external": true
-      },
       {
         "name": "IMG_5217_compressed.mp4",
         "path": "media/id20_1786116094727.mp4"
@@ -372,10 +339,6 @@
       "media/id22_1786059522845_0if3m.jpg"
     ],
     "files": [
-      {
-        "name": "Video, Jeovanni Corcio, framing repair photo-documented, Jun 11 3:48pm (company Slack login required)",
-        "url": "https://achgroupllc.slack.com/files/U05MAKQN9RR/F0B9WQF2XTP/video_clip__2026-06-11_15_48_48_.mov"
-      },
       {
         "name": "2026-06-11_Jeovanni-Corcio_framing-repair_compressed.mp4",
         "path": "media/id22_1786118005071.mp4"
@@ -439,11 +402,6 @@
       "media/id25_1786108084426_hbso4.jpg"
     ],
     "files": [
-      {
-        "name": "Slack video, Jeovanni Corcio, drywall progress, Jun 25 2:34pm (company Slack login required)",
-        "url": "https://achgroupllc.slack.com/files/U05MAKQN9RR/F0BE2AGM8BA/video_clip__2026-06-25_14_34_01_.mov",
-        "external": true
-      },
       {
         "name": "VideoClip_2026-06-25_compressed.mp4",
         "path": "media/id25_1786113659880.mp4"
@@ -516,13 +474,7 @@
       "media/id30_1786110120577_0q6bk.jpg",
       "media/id30_1786110120617_emo0q.jpg"
     ],
-    "files": [
-      {
-        "name": "Slack video, Willy Lopez, Jul 13 10:06pm (company Slack login required)",
-        "url": "https://achgroupllc.slack.com/files/U05MAKQN9RR/F0BHYCBR8N4/img_3675.mov",
-        "external": true
-      }
-    ],
+    "files": [],
     "include": true
   },
   {
@@ -548,11 +500,6 @@
       "media/id32_1786110164636_37bf5.jpg"
     ],
     "files": [
-      {
-        "name": "Slack video, Willy Lopez, Jul 21 2:33pm (company Slack login required)",
-        "url": "https://achgroupllc.slack.com/files/U05MAKQN9RR/F0BJYJ9NW20/img_3819.mov",
-        "external": true
-      },
       {
         "name": "IMG_6201_compressed.mp4",
         "path": "media/id32_1786113125300.mp4"
